@@ -1,7 +1,7 @@
 /* This HTML tag applied background and disables scrolling */
 HTML {
     /* Applies background url and attributes*/
-    background: url(Images/background03.jpg) no-repeat center center fixed;
+    background: url(Images/background.jpg) no-repeat center center fixed;
 
     /* Stretches content of background to fit window size*/
     -webkit-background-size: cover;
