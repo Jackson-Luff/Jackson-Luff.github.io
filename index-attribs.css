@@ -33,7 +33,6 @@ P {
 }
 
 #MainTitleImg {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width:100%;
@@ -61,7 +60,7 @@ P {
 
 .ThumbNails
 {
-	width:25%;
+  width:25%;
 	height:auto;
 	border:5px solid white;
 }
@@ -80,7 +79,7 @@ P {
 	-ms-transform: rotate(-3deg); /* IE 9 */
     -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
     transform: rotate(-3deg);
-	
+
 }
 
 #SplashScreen01

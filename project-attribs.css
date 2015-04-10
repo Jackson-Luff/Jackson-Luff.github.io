@@ -54,8 +54,8 @@ P {
 .ProjImgPreview
 {
 	padding:10px;
-	width:auto;
-	height:30%;
+	width:25%;
+	height:auto;
 }
 
 .SeeMore
@@ -63,7 +63,7 @@ P {
 	float:left;
 }
 
-/* Rainbow colours 
+/* Rainbow colours
 #FF0000 - BvB
 #FF8000 - TinyTanks
 #FFFF00 - BitWise
