@@ -1,0 +1,70 @@
+/* This HTML tag applied background and disables scrolling */
+HTML {
+    /* Applies background url and attributes*/
+    background: url(Images/background.jpg) no-repeat center center fixed;
+
+    /* Stretches content of background to fit window size*/
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: rgb(20,20,20);
+}
+
+P {
+  display:block;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  color:rgb(161,161,161);
+}
+
+.ProjectBoard
+{
+	background:rgba(51,51,51,0.8);
+	font-family:Verdana;
+
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding: 15px;
+	border-radius: 25px;
+	width:75%;
+	text-align-last:left;
+	-webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(0,0,0) , 10px 20px 0px 0 rgba(0,0,0,0.2) ;
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(0,0,0) , 10px 20px 0px 0 rgba(0,0,0,0.2) ;
+}
+
+.ProjImgPreview
+{
+	padding:10px;
+	width:auto;
+	height:30%;
+}
+
+.SeeMore
+{
+	float:left;
+}
+
+/* Rainbow colours 
+#FF0000 - BvB
+#FF8000 - TinyTanks
+#FFFF00 - BitWise
+#80FF00 - AI
+#00FF00
+#00FF80
+#00FFFF
+#0080FF
+#0000FF
+#8000FF
+#FF00FF
+#FF0080	*/
