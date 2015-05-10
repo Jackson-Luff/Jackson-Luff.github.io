@@ -2,7 +2,7 @@
 HTML
 {
     /* Applies background url and attributes*/
-	background: url(Images/background.png) no-repeat fixed;
+	background: url(Images/background.jpg) no-repeat center center fixed;
 
     /* Stretches content of background to fit window size*/
     -webkit-background-size: cover;
