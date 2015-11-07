@@ -93,9 +93,6 @@ P {
 #Portrait
 {
 	float:right;
-	-ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
 }
 
 #SplashScreen00
@@ -104,7 +101,6 @@ P {
 	-ms-transform: rotate(-3deg); /* IE 9 */
     -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
     transform: rotate(-3deg);
-
 }
 
 /* Rainbow colours
