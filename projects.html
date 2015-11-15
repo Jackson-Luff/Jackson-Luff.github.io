@@ -1,66 +1,84 @@
-<html>
-
-<!--  Note: Instead of having old HTML ways of seperate pages, how about have drop down text. FK YS. -->
-
+<html onload="AppDeExtend(0)">
 <head>
   <!-- Assigning the title -->
-  <title> Jackson Luff's Portfolio </title>
+  <title> Projects! </title>
   <!-- Linking of dependencies -->
-  <LINK rel="stylesheet" type="text/css" href="enjoy-css.css"/>
-  <LINK rel="stylesheet" type="text/css" href="attribs.css"/>
-  <SCRIPT type="text/javascript" src="TextInjector.js"></SCRIPT>
-  
-  <div class="Board">
-	<a href="index.html"><img id="MainTitleImg"src="Images/titleName1.png"/><br></a>
-	<a href="index.html"><div id="IndexButt" class="enjoy-css" >HOME</div></a>
-	<a href="resume.html"><div id="ResumeButt" class="enjoy-css" >RESUME</div></a>
-	<a href="projects.html"> <div id="ProjButt" class="enjoy-css">PROJ'S</div></a>
-    <a href="http://jacksonluff.blogspot.com/" target="_blank"><div id="BlogButt" class="enjoy-css" >BLOG</div></a>
-    <a href="https://www.youtube.com/channel/UCOxU20qa6xG4Nu3BeUteYDw/feed" target="_blank"><div id="VidButt" class="enjoy-css">VIDEOS</div></a>
-  </div>
+        <LINK rel="stylesheet" type="text/css" href="codepen.css"/>
+        <LINK rel="stylesheet" type="text/css" href="attribs.css"/>
+        <SCRIPT type="text/javascript" src="TextInjector.js"></SCRIPT>
+        
+        <div class="Board">
+            <a href="index.html"><h3>Jackson Luff</h3></a><br>
+
+            <a href="index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
+                <div>WHAT</div><div>HOME</div>
+                </div></a>
+            <a href="resume.html" id="ResumeButt"><div class="button_base b05_3d_roll">
+                <div>IS</div><div>RESUME</div>
+                </div></a>
+            <a href="projects.html" id="ProjectButt"><div class="button_base b05_3d_roll">
+                <div>THIS</div><div>PROJECTS</div>
+                </div></a>
+            <a href="shaders.html" id="ShaderButt"><div class="button_base b05_3d_roll">
+                <div>PLACE?</div><div>SHADERS</div>
+                </div></a>
+        </div>
 </head>
 
 <body>
-  <div class="Board">
-    <h1> GenGein Engine </h1>
-	<img src="Projects/GenGein/thumb.jpg" alt="GenGein" class="ProjImgPreview"/>
-	<img src="Projects/GenGein/thumb1.jpg" alt="GenGein" class="ProjImgPreview"/>
-	<p>
-	<i>GenGein</i> is still currently an on-going experiment, but GenGein is an engine I wrote with C++ and OpenGL.
-	It currently has the potential to produce complex game systems, accurate real-time physics calulations and modern graphics techniques/rendering.
-	PhysVsPhysX and Checkers are both great examples of GenGein's potential.
-	<br><br>
-	<a href="Projects/GenGein/Proj_GenGein.html" class="SeeMore"><img src="Images/button.png"/></a>
-	<br><br>
-	</p>
-  </div>
+    <div class="Board" id="Board_Curro">
+        <h1> Curro </h1>
+        <img src="Resources/Images/Projects/Curro_thumb.jpg" alt="Curro" class="ProjImgPreview"/>
+        <img src="Resources/Images/Projects/Curro_thumb1.jpg" alt="Curro" class="ProjImgPreview"/>
+        <p>
+        <b>Curro</b> is a 3D exploration platformer created in <b>Unreal Engine 4.8.3</b> over a period of <b>16 weeks.</b> <br>
+        With Curro we really wanted to capture that nostalgic experience that we (the developers)<br> 
+         have experienced in our childhoods; with games such as Spyro and/or Jak and Daxter. <br>
+        <b>[All gameplay intended for children of the age of 14 to 16 years of age] </b>
+        <br><br>
+        <div class="SeeMore" onClick="AppExtend(0)"></div>
+        <br><br>
+    </div>
 
-  <div class="Board">
-    <h1> Columns </h1>
-	<img src="Projects/Columns/thumb.jpg" alt="Columns" class="ProjImgPreview"/>
-	<img src="Projects/Columns/thumb1.jpg" alt="Columns" class="ProjImgPreview"/>
-	<p>
-	<i>Columns</i> is a 'match 3' game that allowed me to explore different programming languages. 
-	Those including JavaScript (Cocos2D Framework), JQuery, HTML and CSS.
-	This project lasted for about 5 weeks and is also compatible on mobile devices.
-	Columns also stores highscores locally and has a built in live weather API.
-	<br><br>
-	<a href="Projects/Columns/Proj_Columns.html" class="SeeMore"><img src="Images/button.png" /></a>
-	<br><br>
-	</p>
-  </div>
+    <div class="Board" id="Board_GenGein">
+        <h1> GenGein Engine </h1>
+        <img src="Resources/Images/Projects/GenGein_thumb.jpg" alt="GenGein" class="ProjImgPreview"/>
+        <img src="Resources/Images/Projects/GenGein_thumb1.jpg" alt="GenGein" class="ProjImgPreview"/>
+        <p>
+        <b> GenGein </b> is a OpenGL C++ engine that I've been working on for several months now.<br>
+        GenGein has undergone several different experiments that have proven it to  <br> be a useful
+        product throughout my ongoing development. 
+        <br><br>
+        <div class="SeeMore" onClick="AppExtend(1)"></div>
+        <br><br>
+        </p>
+    </div>
+    
+    <div class="Board" id="Board_Columns">
+        <h1> Columns </h1>
+        <img src="Resources/Images/Projects/Col_thumb.jpg" alt="GenGein" class="ProjImgPreview"/>
+        <img src="Resources/Images/Projects/Col_thumb1.jpg" alt="GenGein" class="ProjImgPreview"/>
+        <p>
+            <b>Columns</b> is a 'match 3' game that allowed me to explore different programming languages.<br>
+            Those including JavaScript (Cocos2D Framework), JQuery, HTML and CSS. This project          <br>
+            lasted for about 5 weeks and is also compatible on mobile devices. Columns also stores  <br>
+            highscores locally and has a built in live weather API.<br><br>
+        <div class="SeeMore" onClick="AppExtend(2)"></div>
+        <br><br>
+        </p>
+    </div>
 
-   <div class="Board">
-    <h1> Gravitas </h1>
-	<img src="Projects/Gravitas/thumb.jpg" alt="Gravitas" class="ProjImgPreview"/>
-	<img src="Projects/Gravitas/thumb1.jpg" alt="Gravitas" class="ProjImgPreview"/>
+   <div class="Board" id="Board_Gravitas">
+        <h1> Gravitas </h1>
+	<img src="Resources/Images/Projects/Gravitas_thumb.jpg" alt="Gravitas" class="ProjImgPreview"/>
+	<img src="Resources/Images/Projects/Gravitas_thumb1.jpg" alt="Gravitas" class="ProjImgPreview"/>
 	<p>
 	The concept of <i>Gravitas</i> is simple. Alter the direction of gravity to explore the worlds 
 	in search for the destination, only hoping to avoid the turrets. It's written in C# Monogame
 	with the physics engine 'Farseer Physics'.
 	Gravitas is compatible on both PC and PS Vita [Development build] thanks to PlayStation Mobile.
 	<br><br>
-	<a href="Projects/Gravitas/Proj_Gravitas.html" class="SeeMore"><img src="Images/button.png" /></a>
+        <div class="SeeMore" onClick="AppExtend(3)"></div>
 	<br><br>
 	</p>
   </div>

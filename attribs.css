@@ -1,9 +1,11 @@
+@import url('http://fonts.googleapis.com/css?family=Michroma|Audiowide');
+
 /* This HTML tag applied background and disables scrolling */
 HTML
 {
     /* Applies background url and attributes*/
-	background: url(Images/background.jpg) no-repeat center center fixed;
-	
+   background: url(Resources/Images/background.jpg) no-repeat center center fixed;
+   
     /* Stretches content of background to fit window size*/
     -webkit-background-size: cover;
     background-size: cover;
@@ -14,13 +16,25 @@ HTML
 }
 
 h1 {
-  font-family: "Arial Black", Gadget, sans-serif;
-  color: rgb(200,200,200);
+  font-family: 'Michroma', sans-serif;
+  color: rgb(22,22,22);
 }
 
 h2 {
-  font-family: "Arial Black", Gadget, sans-serif;
-  color: rgb(200,200,200);
+  font-family: 'Michroma', sans-serif;
+  color: rgb(22,22,22);
+}
+
+h3 {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 80px;
+  font-weight: lighter;
+  color: #000000;
+  margin-top: -10px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -10px;
+  text-decoration: none;
 }
 
 P {
@@ -30,7 +44,7 @@ P {
   margin-right: auto;
   text-align: center;
 
-  color: rgb(161,161,161);
+  color: rgb(50,50,50);
 }
 
 /*
@@ -39,48 +53,116 @@ P {
  */
 .Board 
 {
-  background-color: rgba(25,25,25,0.8);
-  font-family:Verdana;
-  font-size:98%;
+  background-color: rgba(50,75,75,0.5);
+  font-family: Roboto Condensed, sans-serif;
+  font-size: 20px;
   margin-left:auto;
   margin-right: auto;
   margin-bottom: 50px;
   padding: 15px;
   border-radius: 25px;
-  width:75%;
+  width:80%;
   text-align-last:center;
   -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
   box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
 }
 
-.ProjImgPreview
+.MiniBoard 
 {
-	padding:10px;
-	width:40%;
-	height:auto;
+    display: inline-block;
+    background-color: rgba(25,45,45,0.9);
+    font-family: Michroma, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border:5px solid rgb(25, 25, 25);
+    width:20%;
+    height:20%;
+    text-align-last:center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
 }
 
-.SeeMore
+.MiniBoard:hover {
+    background-color: rgba(125,145,145,0.9);
+    border:5px solid rgb(125, 125, 125);
+}
+
+.MiniBoard:hover h3{
+    color: rgb(50,50,50);
+}
+
+.MiniBoard h3 {
+    color: lightgrey;
+    font-family: Audiowide, sans-serif;
+    font-size: 30px;
+}
+.MiniBoard img{
+    border:5px solid rgb(50,50,50);
+    border-radius: 5px;
+    margin: 10px;
+    width: 200px;
+    height: 120px;
+}
+
+.ProjImgPreview
 {
-	float:left;
+    border:5px solid black;
+    border-radius: 5px;
+    margin:10px;
+    width:40%;
+    height:auto;
+    
 }
 
 .ThumbNails
 {
-	width:25%;
-	height:auto;
-	border:5px solid white;
-	border-radius: 5px;
+    width:25%;
+    height:auto;
+    border:5px solid black;
+    border-radius: 5px;
 }
 
 .IconProperties
 {
   max-width:32px;
   max-height:32px;
-  position
-  float: left;
+  float: center;
   margin-left:auto;
   margin-right:auto;
+  text-decoration: none;
+}
+
+.SeeMore
+{
+    background: url(Resources/Images/buttonReadMore.png);
+    width:128px;
+    height:45px;
+    
+    float:left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.SeeLess
+{
+    background: url(Resources/Images/buttonReadLess.png);
+    width:128px;
+    height:45px;
+    
+    float:left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    
+    cursor: pointer; 
+    cursor: hand;
 }
 
 #MainTitleImg {
@@ -92,16 +174,32 @@ P {
 
 #Portrait
 {
-	float:right;
+    float:right;
+    margin-left:15px;
+    margin-bottom:5px;
 }
 
 #SplashScreen00
 {
-	float:left;
-	-ms-transform: rotate(-3deg); /* IE 9 */
+    float:left;
+    margin-right:15px;
+    margin-top:15px;
+    -ms-transform: rotate(-3deg); /* IE 9 */
     -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
     transform: rotate(-3deg);
 }
+
+#HyperLinks a:visited { text-decoration: none; color:lightblue; }
+#HyperLinks a:hover { text-decoration: none; color:blue; }
+#HyperLinks a:focus { text-decoration: none; color:lightblue; }
+#HyperLinks a:hover, a:active { text-decoration: none; color:white }
+
+.Board a { text-decoration: none; }
+.Board a:visited { text-decoration: none; color:black; }
+.Board a:hover { text-decoration: none; color:black; }
+.Board a:focus { text-decoration: none; color:black; }
+.Board a:active { text-decoration: none; color:black; }
+.Board a:hover { text-decoration: none; color:lightgrey; }
 
 /* Rainbow colours
 #FF0000 - BvB
