@@ -80,7 +80,7 @@ var Curro = {
     
     GetNormal : function(){
         var norm = Curro.GetCommon();
-        norm += '<div class="SeeMore" onClick="AppExtend(0)"></div>';
+        norm += '<div class="button-normal" onClick="AppExtend(0)">Read More</div>';
         norm += '<br><br>';
         norm += '</p>';
         return norm;
@@ -105,7 +105,7 @@ var Curro = {
         ext += '<b>For those interested in the source code [Unreal Engine 4.8.3]:<br></b>';
         ext += '<a href="https://github.com/Sedawrath/Curro" target="_blank">https://github.com/Sedawrath/Curro</a> <br></p>';
         ext += '</div>'
-        ext += '<div class="SeeLess" onClick="AppDeExtend(0)"></div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(0)">Read Less</div>';
         ext += '<br><br><br>';
         return ext;
     }
@@ -126,27 +126,29 @@ var GenGein = {
     
     GetNormal : function(){
         var norm = GenGein.GetCommon();
-        norm += '<div class="SeeMore" onClick="AppExtend(1)"></div>';
+        norm += '<div class="button-normal" onClick="AppExtend(1)">Read More</div>';
         norm += '<br><br>';
         norm += '</p>'
         return norm;
     },
     
     GetExtended : function(){
-        var norm = GenGein.GetCommon();
-        norm += 'It It currently has the potential to produce complex game systems, accurate<br>';
-        norm += 'real-time physics calulations and modern graphics techniques/rendering. <br>';
-        norm += 'It has been proven to produce advanced projects, as proven down below!<br><br>';
-        norm += 'Please take a look at my <b>Checkers</b> and <b> Phys Vs PhysX </b> projects <br> for an overview';
-        norm += 'of "what lies beneath" in GenGein.<br><br>';
-        norm += "If you're particularly interested; it's all open-source.";
-        norm += "Here's the github link:<br>";
-        norm += "<a href='https://github.com/Sedawrath/GenGein-Engine'>";
-        norm += "<div id='HyperLinks'>";
-        norm += 'https://github.com/Sedawrath/GenGein-Engine';
-        norm += '</div>';
-        norm += '</a><br><div class="SeeLess" onClick="AppDeExtend(1)"></div><br><br></p>';
-        return norm;
+        var ext = GenGein.GetCommon();
+        ext += 'It It currently has the potential to produce complex game systems, accurate<br>';
+        ext += 'real-time physics calulations and modern graphics techniques/rendering. <br>';
+        ext += 'It has been proven to produce advanced projects, as proven down below!<br><br>';
+        ext += 'Please take a look at my <b>Checkers</b> and <b> Phys Vs PhysX </b> projects <br> for an overview';
+        ext += 'of "what lies beneath" in GenGein.<br><br>';
+        ext += "<div id='HyperLinks'>";
+        ext += "If you're particularly interested; it's all open-source.";
+        ext += "Here's the github link:<br>";
+        ext += "<a href='https://github.com/Sedawrath/GenGein-Engine'>";
+        ext += 'https://github.com/Sedawrath/GenGein-Engine';
+        ext += '</div></a>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(1)">Read Less</div>';
+        ext += '<br><br>';
+        ext += '</p>'
+        return ext;
     }
 };
 // ============ COLUMNS ==============
@@ -166,14 +168,14 @@ var Columns = {
     
     GetNormal : function(){
         var norm = Columns.GetCommon();
-        norm += '<div class="SeeMore" onClick="AppExtend(2)"></div>'
+        norm += '<div class="button-normal" onClick="AppExtend(2)">Read More</div>';
         norm += '<br><br></p>'
         return norm;
     },
     
     GetExtended : function(){
         var ext = Columns.GetCommon();
-        ext += '<div class="SeeLess" onClick="AppDeExtend(2)"></div>'
+        ext += '<div class="button-extended" onClick="AppDeExtend(2)">Read Less</div>';
         ext += '<br><br></p>'
         return ext;
     }
@@ -196,7 +198,7 @@ var Gravitas = {
     GetNormal : function(){
         var norm = Gravitas.GetCommon();
         norm += '<br><br>';
-        norm += '<div class="SeeMore" onClick="AppExtend(3)"></div>';
+        norm += '<div class="button-normal" onClick="AppExtend(3)">Read More</div>';
 	norm += '<br><br>';
 	norm += '</p>';
         return norm;
@@ -205,7 +207,7 @@ var Gravitas = {
     GetExtended : function(){
         var ext = Gravitas.GetCommon();
         ext += '<br><br>';
-        ext += '<div class="SeeLess" onClick="AppDeExtend(3)"></div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(3)">Read Less</div>';
 	ext += '<br><br>';
 	ext += '</p>';
         return ext;

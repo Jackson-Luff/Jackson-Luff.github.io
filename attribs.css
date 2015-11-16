@@ -101,6 +101,7 @@ P {
     font-family: Audiowide, sans-serif;
     font-size: 24px;
 }
+
 .MiniBoard img{
     border:5px solid rgb(50,50,50);
     border-radius: 5px;
@@ -135,34 +136,6 @@ P {
   margin-left:auto;
   margin-right:auto;
   text-decoration: none;
-}
-
-.SeeMore
-{
-    background: url(Resources/Images/buttonReadMore.png);
-    width:128px;
-    height:45px;
-    
-    float:left;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    
-    cursor: pointer; 
-    cursor: hand;
-}
-
-.SeeLess
-{
-    background: url(Resources/Images/buttonReadLess.png);
-    width:128px;
-    height:45px;
-    
-    float:left;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    
-    cursor: pointer; 
-    cursor: hand;
 }
 
 #MainTitleImg {
