@@ -2,10 +2,14 @@ function GetIDString(id) {
     if(id === 0)
         return "Board_Curro";
     else if(id === 1)
-        return "Board_GenGein";
+        return "Board_Physics";
     else if(id === 2)
-        return "Board_Columns";
+        return "Board_Checkers";
     else if(id === 3)
+        return "Board_GenGein";
+    else if(id === 4)
+        return "Board_Columns";
+    else if(id === 5)
         return "Board_Gravitas";
     else
         alert("Invalid ID number");
@@ -14,6 +18,10 @@ function GetIDString(id) {
 function GetExtendedStringForID(stringID) {
     if(stringID === "Board_Curro")
         return Curro.GetExtended();
+    else if(stringID === "Board_Physics")
+        return Physics.GetExtended();
+    else if(stringID === "Board_Checkers")
+        return Checkers.GetExtended();
     else if(stringID === "Board_GenGein")
         return GenGein.GetExtended();
     else if(stringID === "Board_Columns")
@@ -27,6 +35,10 @@ function GetExtendedStringForID(stringID) {
 function GetNormalStringForID(stringID) {
     if(stringID === "Board_Curro")
         return Curro.GetNormal();
+    else if(stringID === "Board_Physics")
+        return Physics.GetNormal();
+    else if(stringID === "Board_Checkers")
+        return Checkers.GetNormal();
     else if(stringID === "Board_GenGein")
         return GenGein.GetNormal();
     else if(stringID === "Board_Columns")
@@ -110,25 +122,124 @@ var Curro = {
         return ext;
     }
 };
+// ============ CURRO ==============
+var Physics = {
+    
+    GetCommon : function(){
+        var com = "";
+        com += '<h1> Phys Vs PhysX </h1>';
+        com += '<img src="Resources/Images/Projects/Physics_thumb.jpg" alt="Physics" class="ProjImgPreview"/>';
+        com += '<img src="Resources/Images/Projects/Physics_thumb1.jpg" alt="Physics" class="ProjImgPreview"/><p>';
+        com += '<b> Phys vs PhysX </b> was a pretty interesting topic that went for about 8 weeks in development.<br>';
+        com += 'This application is made 100% within my own engine <b>GenGein</b>. Suck a beautiful piece. <br>';
+        com += "This neat little tech' demo was my way of showing off both physics and graphics. On the left <br>";
+        com += 'you see my physics engine (pink) and on the right, you see PhysX (blue). I really wish I <br>';
+        com += "explored multi-threading prior to this as it would've improved the performance exponentially. <br>";
+        com += "<br>";
+        return com;
+    },
+    
+    GetNormal : function(){
+        var norm = Physics.GetCommon();
+        norm += '<br>';
+        norm += '<div class="button-normal" onClick="AppExtend(1)">Read More</div>';
+        norm += '<br><br></p>';
+        return norm;
+    },
+    
+    GetExtended : function(){
+        var ext = Physics.GetCommon();
+        ext += 'What you see here (on the left), is the display of several different physics actor components.<br>';
+        ext += "Firstly, all the way on the right is a bridge of joints. This is the result of <b>Hooke's Law</b>.<br>";
+        ext += "Hooke's Law force states that 'the force needed to extend or compress a spring by some <br>";
+        ext += "distance is proportional to that distance.' To express Hooke's Law in it's simplest form,<br>";
+        ext += 'it is essentially this; <b><i>F = -kX - bv</i></b>. Urgh, Maths! What does this mean!? <br>';
+        ext += '<b>F</b>- The force the spring exerts. | <b>k</b> - the spring constant. (stiffness)<br>';
+        ext += "<b>X</b> - the displacement of the spring from it's resting point.<br>";
+        ext += '<b>b</b> - the damping value of the spring. (retension) <br>';
+        ext += '<b>v</b> - the relative velocity of the particle. (direction) <br><br>';
+        ext += 'Anyway, the rest on my end, is demonstrating various collision checks between spheres, <br>';
+        ext += "cubes and planes. I won't get into the math on that one, but you get the idea. Considering <br>";
+        ext += "I'm only running this through <b> one thread </b>, i'm actually impressed with how well it performs! <br><br>";
+        ext += 'On the right is a demonstration of some of the sweet beauties in the <b>PhysX SDK (C++)</b> can do! <br>';
+        ext += 'I designed it so I could demonstrate several different elements within the one room.<br>';
+        ext += "Up the front in-game, you'll see floating cubes and a <b>ragdoll</b> just above. As you probably<br>";
+        ext += 'assumed, yes the ragdoll falls through the wall of cubes and yes they then become dynamic. <br>';
+        ext += "At the back is a <b>pyramid of cubes</b> (as shown on your right) that if you're feelin' a little <br>";
+        ext += 'cheeky, can destroy by <b>shooting spheres</b> at. (you can shoot spheres in both areas) <br>';
+        ext += "Then lastly, on your right of the PhysX side, you'll see a 'particle fountain' displaying <br>";
+        ext += "PhysX's notorious <b>fluid simulation</b>. Sadly I ran out of time, but I'm hoping to come back <br>";
+        ext += 'to run a <b>marching cubes</b> algorithm over the top to visually display the fluid. <br>';
+        ext += '<br><b> All graphics shaders are featured in my SHADER tab above. </b><br>';
+        ext += 'Urgh, enough talk! Go check it out yourself and spam me feedback!';
+        ext += '<br><div id="HyperLinks">';
+        ext += 'Go check out <b> Phys Vs PhysX: </b><br> (Release build and source code inside)<br>';
+        ext += '<a href="https://www.dropbox.com/s/wd0siewzn8j5ruf/Phys-Vs-PhysX.zip?dl=0">https://www.dropbox.com/GenGein/PhysVsPhysX.zip</a></div></p>';
+        ext += '<br><div class="button-extended" onClick="AppDeExtend(1)">Read Less</div>';
+        ext += '<br><br></p>';
+        return ext;
+    }
+};
+// ============ CURRO ==============
+var Checkers = {
+    
+    GetCommon : function(){
+        var com = "";
+        com += '<h1> Checkers </h1>';
+        com += '<img src="Resources/Images/Projects/Checkers_thumb.jpg" alt="Checkers" class="ProjImgPreview"/>';
+        com += '<img src="Resources/Images/Projects/Checkers_thumb1.jpg" alt="Checkers" class="ProjImgPreview"/>';
+        com += '<p><b> Checkers </b> is a 3D interactive demo that was produce over a period of about 8 weeks. <br>';
+        com += 'Within <i>Checkers</i>, you  play against a fairly competitive <b>AI</b> that is using a modified <br>';
+        com += 'version of the <b>Monte Carlo Tree Search algorithm</b>. MCTS for short, is a  heuristic search algorithm<br>';
+        com += 'of making decisions in some decision processes, most notably employed in game playing.<br>';
+        return com;
+    },
+    
+    GetNormal : function(){
+        var norm = Checkers.GetCommon();
+        norm += '<div class="button-normal" onClick="AppExtend(2)">Read More</div>';
+        norm += '<br><br></p>';
+        return norm;
+    },
+    
+    GetExtended : function(){
+        var ext = Checkers.GetCommon();
+        ext += '<br>Pretty much what I ended up doing is writing up a fairly decent AI that cycled through about <br>';
+        ext += '80 playthroughs at a depth of 10 random plays, for each randomly selected move piece, per turn.<br>';
+        ext += "What this resulted with was a very clear statistic that determines the AI's best chance of winning. <br><br>";
+        ext += "Aside from having AI implemented, this also was my first use of <b>FMOD's Low Level API</b>. <br>";
+        ext += 'Sounds are layed out on players movements as well as having a glistening audio track in the <br>';
+        ext += "background, to create a <b>gentlemen's club atmosphere</b>.<br><br>";
+        ext += 'Now to the visual side of things. Here we have a <b>skybox, real-time lighting and imported models</b><br>';
+        ext += 'with textures -- All produced in my nifty little engine, <b>GenGein</b>. <br>';
+        ext += 'This beautiful little piece was crafted by my good friend, <a href="https://www.artstation.com/artist/doodee"<b>Alex Kennedy</b></a>. <br>';
+        ext += '<div id="HyperLinks">';
+        ext += 'Feeling interested? Go check it out! Sadly I misplaced the source code, but the release is here:<br>';
+        ext += '<a href="https://www.dropbox.com/s/4p7vx0e5oyluc15/Checkers%20-%20Release%20Mode.zip?dl=0">https://www.dropbox.com/GenGein/Checkers_Release.zip</a></div><br>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(2)">Read Less</div>';
+        ext += '<br><br></p>';
+        return ext;
+    }
+};
 // ============ GENGEIN ==============
 var GenGein = {
     
     GetCommon : function(){
         var com = "";
-        com += '<h1> GenGein Engine </h1>'
+        com += '<h1> GenGein Engine </h1>';
         com += '<img src="Resources/Images/Projects/GenGein_thumb.jpg" alt="GenGein" class="ProjImgPreview"/>';
         com += '<img src="Resources/Images/Projects/GenGein_thumb1.jpg" alt="GenGein" class="ProjImgPreview"/><p>';
         com += "<b> GenGein </b> is a OpenGL C++ engine that I've been working on for several months now.<br>";
         com += 'GenGein has undergone several different experiments that have proven it to <br> be a useful';
-        com += 'product throughout my ongoing development. <br><br><br>';
+        com += 'product throughout my ongoing development. <br><br>';
         return com;
     },
     
     GetNormal : function(){
         var norm = GenGein.GetCommon();
-        norm += '<div class="button-normal" onClick="AppExtend(1)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(3)">Read More</div>';
         norm += '<br><br>';
-        norm += '</p>'
+        norm += '</p>';
         return norm;
     },
     
@@ -143,11 +254,12 @@ var GenGein = {
         ext += "If you're particularly interested; it's all open-source.";
         ext += "Here's the github link:<br>";
         ext += "<a href='https://github.com/Sedawrath/GenGein-Engine' target='_blank'>";
-        ext += 'https://github.com/Sedawrath/GenGein-Engine';
-        ext += '</div></a>';
-        ext += '<div class="button-extended" onClick="AppDeExtend(1)">Read Less</div>';
-        ext += '<br><br>';
+        ext += 'https://github.com/Sedawrath/GenGein-Engine</a>';
+        ext += '</div><br>';
         ext += '</p>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(3)">Read Less</div>';
+        ext += '<br><br>';
+        
         return ext;
     }
 };
@@ -162,21 +274,21 @@ var Columns = {
         com += "<b>Columns</b> is a 'match 3' game that allowed me to explore different programming languages.<br>";
         com += 'Those including JavaScript (Cocos2D Framework), JQuery, HTML and CSS. This project          <br>';
         com += 'lasted for about 5 weeks and is also compatible on mobile devices. Columns also stores  <br>';
-        com += 'highscores locally and has a built in live weather API.<br><br>';
+        com += 'highscores locally and has a built in live weather API.<br><br></p>';
          return com;
     },
     
     GetNormal : function(){
         var norm = Columns.GetCommon();
-        norm += '<div class="button-normal" onClick="AppExtend(2)">Read More</div>';
-        norm += '<br><br></p>'
+        norm += '<div class="button-normal" onClick="AppExtend(4)">Read More</div>';
+        norm += '<br><br>';
         return norm;
     },
     
     GetExtended : function(){
         var ext = Columns.GetCommon();
-        ext += '<div class="button-extended" onClick="AppDeExtend(2)">Read Less</div>';
-        ext += '<br><br></p>'
+        ext += '<div class="button-extended" onClick="AppDeExtend(4)">Read Less</div>';
+        ext += '<br><br>';
         return ext;
     }
 };
@@ -198,7 +310,7 @@ var Gravitas = {
     GetNormal : function(){
         var norm = Gravitas.GetCommon();
         norm += '<br><br>';
-        norm += '<div class="button-normal" onClick="AppExtend(3)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(5)">Read More</div>';
 	norm += '<br><br>';
 	norm += '</p>';
         return norm;
@@ -207,7 +319,7 @@ var Gravitas = {
     GetExtended : function(){
         var ext = Gravitas.GetCommon();
         ext += '<br><br>';
-        ext += '<div class="button-extended" onClick="AppDeExtend(3)">Read Less</div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(5)">Read Less</div>';
 	ext += '<br><br>';
 	ext += '</p>';
         return ext;

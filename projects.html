@@ -1,29 +1,29 @@
 <html onload="AppDeExtend(0)">
-<head>
-  <!-- Assigning the title -->
-  <title> Projects! </title>
-  <!-- Linking of dependencies -->
+    <head>
+        <!-- Assigning the title -->
+        <title> Projects! </title>
+        <!-- Linking of dependencies -->
         <LINK rel="stylesheet" type="text/css" href="codepen.css"/>
         <LINK rel="stylesheet" type="text/css" href="attribs.css"/>
         <link rel="stylesheet" type="text/css" href="3d-ish-button/css/style.css">
         <SCRIPT type="text/javascript" src="TextInjector.js"></SCRIPT>
-        
-        <div class="Board">
-            <a href="index.html"><h3>Jackson Luff</h3></a><br>
 
-            <a href="index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
+    <div class="Board">
+        <a href="index.html"><h3>Jackson Luff</h3></a><br>
+
+        <a href="index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
                 <div>WHAT</div><div>HOME</div>
-                </div></a>
-            <a href="resume.html" id="ResumeButt"><div class="button_base b05_3d_roll">
+            </div></a>
+        <a href="resume.html" id="ResumeButt"><div class="button_base b05_3d_roll">
                 <div>IS</div><div>RESUME</div>
-                </div></a>
-            <a href="projects.html" id="ProjectButt"><div class="button_base b05_3d_roll">
+            </div></a>
+        <a href="projects.html" id="ProjectButt"><div class="button_base b05_3d_roll">
                 <div>THIS</div><div>PROJECTS</div>
-                </div></a>
-            <a href="shaders.html" id="ShaderButt"><div class="button_base b05_3d_roll">
+            </div></a>
+        <a href="shaders.html" id="ShaderButt"><div class="button_base b05_3d_roll">
                 <div>PLACE?</div><div>SHADERS</div>
-                </div></a>
-        </div>
+            </div></a>
+    </div>
 </head>
 
 <body>
@@ -32,13 +32,43 @@
         <img src="Resources/Images/Projects/Curro_thumb.jpg" alt="Curro" class="ProjImgPreview"/>
         <img src="Resources/Images/Projects/Curro_thumb1.jpg" alt="Curro" class="ProjImgPreview"/>
         <p>
-        <b>Curro</b> is a 3D exploration platformer created in <b>Unreal Engine 4.8.3</b> over a period of <b>16 weeks.</b> <br>
-        With Curro we really wanted to capture that nostalgic experience that we (the developers)<br> 
-         have experienced in our childhoods; with games such as Spyro and/or Jak and Daxter. <br>
-        <b>[All gameplay intended for children of the age of 14 to 16 years of age] </b>
-        <br><br>
+            <b>Curro</b> is a 3D exploration platformer created in <b>Unreal Engine 4.8.3</b> over a period of <b>16 weeks.</b> <br>
+            With Curro we really wanted to capture that nostalgic experience that we (the developers)<br> 
+            have experienced in our childhoods; with games such as Spyro and/or Jak and Daxter. <br>
+            <b>[All gameplay intended for children of the age of 14 to 16 years of age] </b>
+            <br><br>
         <div class="button-normal" onClick="AppExtend(0)">Read More</div>
         <br><br>
+    </div>
+
+    <div class="Board" id="Board_Physics">
+        <h1> Phys Vs PhysX </h1>
+        <img src="Resources/Images/Projects/Physics_thumb.jpg" alt="Physics" class="ProjImgPreview"/>
+        <img src="Resources/Images/Projects/Physics_thumb1.jpg" alt="Physics" class="ProjImgPreview"/>
+        <p>
+            <b> Phys vs PhysX </b> was a pretty interesting topic that went for about 8 weeks in development.<br>
+            This application is made 100% within my own engine <b>GenGein</b>. Suck a beautiful piece. <br>
+            This neat little tech' demo was my way of showing off both physics and graphics. On the left <br>
+            you see my physics engine (pink) and on the right, you see PhysX (blue). I really wish I <br>
+            explored multi-threading prior to this as it would've improved the performance exponentially. <br>
+        </p><br>
+        <div class="button-normal" onClick="AppExtend(1)">Read More</div>
+        <br><br>
+    </div>
+
+    <div class="Board" id="Board_Checkers">
+        <h1> Checkers </h1>
+        <img src="Resources/Images/Projects/Checkers_thumb.jpg" alt="Checkers" class="ProjImgPreview"/>
+        <img src="Resources/Images/Projects/Checkers_thumb1.jpg" alt="Checkers" class="ProjImgPreview"/>
+        <p>
+            <b> Checkers </b> is a 3D interactive demo that was produce over a period of about 8 weeks. <br>
+            Within <i>Checkers</i>, you  play against a fairly competitive <b>AI</b> that is using a modified <br>
+            version of the <b>Monte Carlo Tree Search algorithm</b>. MCTS for short, is a  heuristic search algorithm<br>
+            of making decisions in some decision processes, most notably employed in game playing. <br>
+        <br>
+        <div class="button-normal" onClick="AppExtend(2)">Read More</div>
+        <br><br>
+        </p>
     </div>
 
     <div class="Board" id="Board_GenGein">
@@ -46,15 +76,15 @@
         <img src="Resources/Images/Projects/GenGein_thumb.jpg" alt="GenGein" class="ProjImgPreview"/>
         <img src="Resources/Images/Projects/GenGein_thumb1.jpg" alt="GenGein" class="ProjImgPreview"/>
         <p>
-        <b> GenGein </b> is a OpenGL C++ engine that I've been working on for several months now.<br>
-        GenGein has undergone several different experiments that have proven it to  <br> be a useful
-        product throughout my ongoing development. 
-        <br><br>
-        <div class="button-normal" onClick="AppExtend(1)">Read More</div>
+            <b> GenGein </b> is a OpenGL C++ engine that I've been working on for several months now.<br>
+            GenGein has undergone several different experiments that have proven it to  <br> be a useful
+            product throughout my ongoing development. 
+            <br><br>
+        <div class="button-normal" onClick="AppExtend(3)">Read More</div>
         <br><br>
         </p>
     </div>
-    
+
     <div class="Board" id="Board_Columns">
         <h1> Columns </h1>
         <img src="Resources/Images/Projects/Col_thumb.jpg" alt="GenGein" class="ProjImgPreview"/>
@@ -64,27 +94,27 @@
             Those including JavaScript (Cocos2D Framework), JQuery, HTML and CSS. This project          <br>
             lasted for about 5 weeks and is also compatible on mobile devices. Columns also stores  <br>
             highscores locally and has a built in live weather API.<br><br>
-        <div class="button-normal" onClick="AppExtend(2)">Read More</div>
+        <div class="button-normal" onClick="AppExtend(4)">Read More</div>
         <br><br>
         </p>
     </div>
 
-   <div class="Board" id="Board_Gravitas">
+    <div class="Board" id="Board_Gravitas">
         <h1> Gravitas </h1>
-	<img src="Resources/Images/Projects/Gravitas_thumb.jpg" alt="Gravitas" class="ProjImgPreview"/>
-	<img src="Resources/Images/Projects/Gravitas_thumb1.jpg" alt="Gravitas" class="ProjImgPreview"/>
-	<p>
-	The concept of <i>Gravitas</i> is simple. Alter the direction of gravity to explore the worlds 
-	in search for the destination, only hoping to avoid the turrets. It's written in C# Monogame
-	with the physics engine 'Farseer Physics'.
-	Gravitas is compatible on both PC and PS Vita [Development build] thanks to PlayStation Mobile.
+        <img src="Resources/Images/Projects/Gravitas_thumb.jpg" alt="Gravitas" class="ProjImgPreview"/>
+        <img src="Resources/Images/Projects/Gravitas_thumb1.jpg" alt="Gravitas" class="ProjImgPreview"/>
+        <p>
+            The concept of <i>Gravitas</i> is simple. Alter the direction of gravity to explore the worlds 
+            in search for the destination, only hoping to avoid the turrets. It's written in C# Monogame
+            with the physics engine 'Farseer Physics'.
+            Gravitas is compatible on both PC and PS Vita [Development build] thanks to PlayStation Mobile.
         </p>
-	<br><br>
-        <div class="button-normal" onClick="AppExtend(3)">Read More</div>
-	<br><br>
-	
-  </div>
+        <br><br>
+        <div class="button-normal" onClick="AppExtend(5)">Read More</div>
+        <br><br>
 
-<footer>
-</footer>
+    </div>
+
+    <footer>
+    </footer>
 </html>
