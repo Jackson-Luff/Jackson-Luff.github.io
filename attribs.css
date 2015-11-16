@@ -99,14 +99,14 @@ P {
 .MiniBoard h3 {
     color: lightgrey;
     font-family: Audiowide, sans-serif;
-    font-size: 30px;
+    font-size: 24px;
 }
 .MiniBoard img{
     border:5px solid rgb(50,50,50);
     border-radius: 5px;
     margin: 10px;
-    width: 200px;
-    height: 120px;
+    width: 75%;
+    height: 25%;
 }
 
 .ProjImgPreview
