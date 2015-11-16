@@ -12,8 +12,7 @@
     -moz-border-radius: 0.3em;
     -webkit-border-radius: 0.3em;
     border-radius: 0.3em;
-    border: 1px solid;
-    border-color: #000 #a2a2a2 #171717;
+    border: 1px solid black;
     background-color: #000;
     background-size: 100%;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #d4d4d4));
@@ -30,7 +29,7 @@
 }
 .button-normal:hover {
   color: rgba(49,49,49, 0.8);
-  border-color: #fff #DCD5D5 #7e7e7e;
+  border-color: #7997a1;
   background-image: -moz-linear-gradient(#add8e6, #7997a1);
   background-image: -webkit-linear-gradient(#add8e6, #7997a1);
   background-image: linear-gradient(#add8e6, #7997a1);
