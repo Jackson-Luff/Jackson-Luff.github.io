@@ -215,7 +215,7 @@ var Checkers = {
         ext += 'This beautiful little piece was crafted by my good friend, <a href="https://www.artstation.com/artist/doodee"<b>Alex Kennedy</b></a>. <br>';
         ext += '<div id="HyperLinks">';
         ext += 'Feeling interested? Go check it out! Sadly I misplaced the source code, but the release is here:<br>';
-        ext += '<a href="https://www.dropbox.com/s/4p7vx0e5oyluc15/Checkers%20-%20Release%20Mode.zip?dl=0">https://www.dropbox.com/GenGein/Checkers_Release.zip</a></div><br>';
+        ext += '<a href="https://www.dropbox.com/s/bzxl8unv5b9qnnn/Checkers.zip?dl=0">https://www.dropbox.com/GenGein/Checkers.zip</a></div><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(2)">Read Less</div>';
         ext += '<br><br></p>';
         return ext;
