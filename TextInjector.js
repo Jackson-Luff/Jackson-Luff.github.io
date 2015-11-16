@@ -100,11 +100,11 @@ var Curro = {
         ext += 'down below where you can access the latest build of the game, as well as the source code. <br>';
         ext += "If you have any questions feel free to email me and I'll get back to you asap!<br><br>";
         ext += '<div id="HyperLinks">'
-        ext += '<b>For those interested in our latest build [Friday 06th Nov]:</b><br>';
+        ext += 'For those interested in our latest build [Friday 06th Nov]:<br>';
         ext += '<a href="http://bit.ly/1lpHb8w" target="_blank">https://www.dropbox.com/Curro/Release/Curro06thNov.zip</a><br><br>';
-        ext += '<b>For those interested in the source code [Unreal Engine 4.8.3]:<br></b>';
+        ext += 'For those interested in the source code [Unreal Engine 4.8.3]:<br>';
         ext += '<a href="https://github.com/Sedawrath/Curro" target="_blank">https://github.com/Sedawrath/Curro</a> <br></p>';
-        ext += '</div>'
+        ext += '</div><br>'
         ext += '<div class="button-extended" onClick="AppDeExtend(0)">Read Less</div>';
         ext += '<br><br><br>';
         return ext;
@@ -120,7 +120,7 @@ var GenGein = {
         com += '<img src="Resources/Images/Projects/GenGein_thumb1.jpg" alt="GenGein" class="ProjImgPreview"/><p>';
         com += "<b> GenGein </b> is a OpenGL C++ engine that I've been working on for several months now.<br>";
         com += 'GenGein has undergone several different experiments that have proven it to <br> be a useful';
-        com += 'product throughout my ongoing development. <br><br>';
+        com += 'product throughout my ongoing development. <br><br><br>';
         return com;
     },
     
@@ -142,12 +142,12 @@ var GenGein = {
         ext += "<div id='HyperLinks'>";
         ext += "If you're particularly interested; it's all open-source.";
         ext += "Here's the github link:<br>";
-        ext += "<a href='https://github.com/Sedawrath/GenGein-Engine'>";
+        ext += "<a href='https://github.com/Sedawrath/GenGein-Engine' target='_blank'>";
         ext += 'https://github.com/Sedawrath/GenGein-Engine';
         ext += '</div></a>';
         ext += '<div class="button-extended" onClick="AppDeExtend(1)">Read Less</div>';
         ext += '<br><br>';
-        ext += '</p>'
+        ext += '</p>';
         return ext;
     }
 };
