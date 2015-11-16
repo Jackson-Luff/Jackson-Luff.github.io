@@ -1,11 +1,11 @@
 @import url('http://fonts.googleapis.com/css?family=Michroma|Audiowide');
 
-/* This HTML tag applied background and disables scrolling */
+/* This HTML tag applied background*/
 HTML
 {
     /* Applies background url and attributes*/
-   background: url(../Images/background.jpg) no-repeat center center fixed;
-   
+    background: url(../Images/background.jpg) no-repeat center center fixed;
+
     /* Stretches content of background to fit window size*/
     -webkit-background-size: cover;
     background-size: cover;
@@ -42,7 +42,6 @@ P {
   width:90%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 
   color: rgb(50,50,50);
 }
@@ -53,24 +52,24 @@ P {
  */
 .Board 
 {
-  background-color: rgba(100,125,125,0.5);
-  font-family: Roboto Condensed, sans-serif;
-  font-size: 20px;
-  margin-left:auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding: 15px;
-  border-radius: 25px;
-  width:80%;
-  text-align-last:center;
-  -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
-  box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
+    background-color: rgba(100,125,125,0.5);
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 25px;
+    width:80%;
+    text-align-last:center;
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.4);
 }
 
 .MiniBoard
 {
     display: inline-block;
-    background-color: rgba(25,45,45,0.9);
+    background-color: rgba(25,45,45,0.6);
     font-family: Michroma, sans-serif;
     font-size: 20px;
     margin: 20px;
@@ -83,31 +82,38 @@ P {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-user-select: none;
-    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 0 5px 0 0 rgb(50,50,50) , 10px 20px 0px 0 rgba(0,0,0,0.2);
-}
-
-.MiniBoard:hover {
-    background-color: rgba(125,145,145,0.9);
-    border:5px solid rgb(125, 125, 125);
-}
-
-.MiniBoard:hover h3{
-    color: rgb(50,50,50);
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.2);
 }
 
 .MiniBoard h3 {
-    color: lightgrey;
+    color: rgb(240,240,240);
     font-family: Audiowide, sans-serif;
     font-size: 24px;
 }
 
+.MiniBoard:hover h3{
+    color: rgb(10,10,10);
+}
+
 .MiniBoard img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     border:5px solid rgb(50,50,50);
     border-radius: 5px;
-    margin: 10px;
-    width: 75%;
-    height: 25%;
+    
+    width: 90%;
+    height: auto;
+}
+
+.MiniBoard:hover {
+    background-color: rgba(125,145,145,0.9);
+}
+
+.MiniBoard:hover img {
+    border:5px solid rgb(125, 125, 125);
 }
 
 .ProjImgPreview
@@ -138,13 +144,6 @@ P {
   text-decoration: none;
 }
 
-#MainTitleImg {
-  margin-left: auto;
-  margin-right: auto;
-  width:100%;
-  height:auto;
-}
-
 #Portrait
 {
     float:right;
@@ -163,17 +162,10 @@ P {
 }
 
 #HyperLinks { font-weight:bold; color:#2a2a2a; }
-#HyperLinks a:visited { text-decoration: none; color:#4c4cff; }
-#HyperLinks a:hover { text-decoration: none; color:#4c4cff; }
-#HyperLinks a:focus { text-decoration: none; color:#4c4cff; }
+#HyperLinks a:visited, a:focus { text-decoration: none; color:#4c4cff; }
 #HyperLinks a:hover, a:active { text-decoration: none; color:white }
 
 .Board a { text-decoration: none; }
-.Board a:visited { text-decoration: none; color:black; }
-.Board a:hover { text-decoration: none; color:black; }
-.Board a:focus { text-decoration: none; color:black; }
-.Board a:active { text-decoration: none; color:black; }
-.Board a:hover { text-decoration: none; color:lightgrey; }
 
 /* Rainbow colours
 #FF0000 - BvB
