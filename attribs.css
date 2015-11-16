@@ -162,9 +162,12 @@ P {
     transform: rotate(-3deg);
 }
 
-#HyperLinks a:visited { text-decoration: none; color:lightblue; }
-#HyperLinks a:hover { text-decoration: none; color:blue; }
-#HyperLinks a:focus { text-decoration: none; color:lightblue; }
+#HyperLinks {
+    font-weight:bold;
+}
+#HyperLinks a:visited { text-decoration: none; color:#4c4cff; }
+#HyperLinks a:hover { text-decoration: none; color:#4c4cff; }
+#HyperLinks a:focus { text-decoration: none; color:#4c4cff; }
 #HyperLinks a:hover, a:active { text-decoration: none; color:white }
 
 .Board a { text-decoration: none; }
