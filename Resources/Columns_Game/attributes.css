@@ -1,0 +1,58 @@
+/* This HTML tag applied background and disables scrolling */
+HTML { 
+    /* Applies background url and attributes*/
+    background: url(Resources/Images/background.png) no-repeat center center fixed; 
+    
+    /* Stretches content of background to fit window size*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+    /* Removes scrolling capability*/
+    overflow: hidden; 
+}
+
+/* 
+ * Makes a really nice paragraph wrapped 
+ * with smooth border application. 
+ */
+P{
+    /* Font family */
+    font-family:Verdana;
+    /* Margin from side */
+    margin: 50px;
+    /* All round padding to apply space to background */
+    padding: 15px; 
+    /* Background around paragraphs is white */
+    background:white;
+    /* Applies border with rounded edges */
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+/* Applied attributes to the 'A' tag  */
+A{
+    /* Removes the ugly purple hyperlink colour */
+    color: inherit;
+    /* Removes any applied styles (like hyperlink underline) */
+    text-decoration: none;
+}
+
+/* Applies custom attributes to 'welcome' image */
+#titleImg
+{
+    /*center the image*/
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/* Applies custom attributes to canvas */
+#mainCanvas
+{
+    /* The background imitates the HTML background */
+    background: url(Resources/Images/canvBack.png) no-repeat center center fixed;
+    
+    /* Stretches canvas background over*/
+    -webkit-background-size: cover;
+    background-size: cover;
+}

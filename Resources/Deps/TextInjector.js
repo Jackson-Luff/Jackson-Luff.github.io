@@ -111,12 +111,12 @@ var Curro = {
         ext += "It's hard for me to put in to words, so why don't you go check it out yourself! There's links <br>";
         ext += 'down below where you can access the latest build of the game, as well as the source code. <br>';
         ext += "If you have any questions feel free to email me and I'll get back to you asap!<br><br>";
-        ext += '<div id="HyperLinks">'
+        ext += '<div id="HyperLinks">';
         ext += 'For those interested in our latest build [Friday 06th Nov]:<br>';
         ext += '<a href="http://bit.ly/1lpHb8w" target="_blank">https://www.dropbox.com/Curro/Release/Curro06thNov.zip</a><br><br>';
         ext += 'For those interested in the source code [Unreal Engine 4.8.3]:<br>';
         ext += '<a href="https://github.com/Sedawrath/Curro" target="_blank">https://github.com/Sedawrath/Curro</a> <br></p>';
-        ext += '</div><br>'
+        ext += '</div><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(0)">Read Less</div>';
         ext += '<br><br><br>';
         return ext;
@@ -271,11 +271,10 @@ var Columns = {
         com += '<h1> Columns </h1>';
         com += '<img src="Resources/Images/Projects/Col_thumb.jpg" alt="GenGein" class="ProjImgPreview"/>';
         com += '<img src="Resources/Images/Projects/Col_thumb1.jpg" alt="GenGein" class="ProjImgPreview"/><p>';
-        com += "<b>Columns</b> is a 'match 3' game that allowed me to explore different programming languages.<br>";
-        com += 'Those including JavaScript (Cocos2D Framework), JQuery, HTML and CSS. This project          <br>';
-        com += 'lasted for about 5 weeks and is also compatible on mobile devices. Columns also stores  <br>';
-        com += 'highscores locally and has a built in live weather API.<br><br></p>';
-         return com;
+        com += '<b>Columns</b> is a <i>match 3</i> inspired game where the goal is to collect as much<br>';
+        com += "points as possible without running out of time and tile space. The longer you're in <br>";
+        com += 'the game, the faster it takes for the columns to fall! <br><br>';
+        return com;
     },
     
     GetNormal : function(){
@@ -287,6 +286,21 @@ var Columns = {
     
     GetExtended : function(){
         var ext = Columns.GetCommon();
+        ext += 'Columns went into development for about 5 weeks and by that point was fully functionable<br>';
+        ext += 'over both mobile and PC devices. It was developed in Cocos2D Javascript Framework for <br>';
+        ext += 'effective use. (Although after exploring javascript I had a game running without it) <br>';
+        ext += '<br>';
+        ext += 'As you can clearly tell, even as of a year ago I still loved pretty things! Pretty awesome<br>';
+        ext += 'to see that carry through! Although in saying that, <b> I do not own the art content of this game</b>. <br>';
+        ext += '<br>';
+        ext += 'What I found really interesting with making this game was not even the game, but the functions<br>';
+        ext += 'within the menu. On the mainmenu area is an in built weather API with real-time visual feedback<br>';
+        ext += "How awesome's that?! Not to mention scores within the game are stored into the local repository<br>";
+        ext += 'of the browser,. So, if you <b> REALLY </b> loved my game, you could actually spend<br>';
+        ext += 'hours trying to beat your highscore... Hint, hint. <br>';
+        ext += '<div id="HyperLinks">';
+        ext += "Oh, did I also mention you don't have to download this? Yeah, <a href='Resources/Columns_Game/index.html' target='_blank'a>click here.</a><br>";
+        ext += '</div><br><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(4)">Read Less</div>';
         ext += '<br><br>';
         return ext;
@@ -300,16 +314,14 @@ var Gravitas = {
         com += '<h1> Gravitas </h1>';
 	com += '<img src="Resources/Images/Projects/Gravitas_thumb.jpg" alt="Gravitas" class="ProjImgPreview"/>';
 	com += '<img src="Resources/Images/Projects/Gravitas_thumb1.jpg" alt="Gravitas" class="ProjImgPreview"/><p>';
-	com += 'The concept of <i>Gravitas</i> is simple. Alter the direction of gravity to explore the worlds ';
-	com += "in search for the destination, only hoping to avoid the turrets. It's written in C# Monogame";
-	com += "with the physics engine 'Farseer Physics'.";
-	com += 'Gravitas is compatible on both PC and PS Vita [Development build] thanks to PlayStation Mobile.';
-         return com;
+	com += '<b>Gravitas</b> was quite a simple yet wonderful game. The main mechanic of the game is that <br>';
+        com += 'you can manipulate gravity to rotate in any odd direction. This left open some pretty interesting<br>';
+        com += 'doors along the way of development.<br><br>';
+        return com;
     },
     
     GetNormal : function(){
-        var norm = Gravitas.GetCommon();
-        norm += '<br><br>';
+        var norm = Gravitas.GetCommon(); 
         norm += '<div class="button-normal" onClick="AppExtend(5)">Read More</div>';
 	norm += '<br><br>';
 	norm += '</p>';
@@ -318,6 +330,14 @@ var Gravitas = {
     
     GetExtended : function(){
         var ext = Gravitas.GetCommon();
+        ext += 'Gravtias was developed in a period of 8 weeks and constructed by 3 programmers in C# Monodev.<br>';
+        ext += "Theoretically to push out what we did if it were from scratch would've taken an incredibly<br>";
+        ext += 'long time, but thanks to the wonderful physics engine, <b>Farseer Physics</b> we pushed <br>';
+        ext += 'along our schedule quite fittingly. <br><br>';
+        ext += 'Now, to the most interesting part about Gravitas; Thanks to Monodev for porting functionality<br>';
+        ext += 'and AIE for having PS Vita dev kits, we were able to build our game onto a PS Vita.<br>';
+        ext += 'Man, there really is no better feeling than playing your own game on such a device. <br><br>';
+        ext += "<b>DISCLAIMER: Apologise. We're still trying to find the release build and source code.</b></p>";
         ext += '<br><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(5)">Read Less</div>';
 	ext += '<br><br>';

@@ -1,5 +1,3 @@
-$(document).ready(
-   function() {  
-    $("html").niceScroll();
-    }
-);
+$(document).ready(function()          
+{
+});
