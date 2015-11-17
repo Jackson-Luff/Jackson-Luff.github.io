@@ -9,10 +9,13 @@ and open the template in the editor.
         <title> The Shaders! </title>
         <!-- Linking of dependencies -->
         <LINK rel="shortcut icon" href="../Resources/Images/icon.ico">
-        <LINK rel="stylesheet" type="text/css" href="../Resources/Deps/codepen.css"/>
-        <LINK rel="stylesheet" type="text/css" href="../Resources/Deps/attribs.css"/>
-        <SCRIPT type="text/javascript" src="../Resources/Deps/Trianglify.min.js"></SCRIPT>
-        <div id="TrianglifyBackground"></div>
+        <LINK rel="stylesheet" type="text/css" href="../Resources/Scripts/codepen.css"/>
+        <LINK rel="stylesheet" type="text/css" href="../Resources/Scripts/attribs.css"/>
+        
+        <SCRIPT type="text/javascript" src="../Resources/Scripts/jquery-2.1.4.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="../Resources/Scripts/Trianglify.min.js"></SCRIPT>
+        <script type="text/javascript" src="../Resources/Scripts/initcanvas.js"></script>
+        <canvas id = "backgroundCanvas"></canvas>
         
         <div class="Board">
             <a href="../index.html"><h3>Jackson Luff</h3></a><br>
@@ -31,7 +34,7 @@ and open the template in the editor.
                 </div></a>
         </div>
     </head>
-    <body onLoad="SetUp()">
+    <body>
 	<div class="ShaderBoard" style="p {float:left;}">
             <h1>Interact V4</h1>           
             <img src="../Resources/Images/Shaders/InteractV4.gif" id='Shaders_Interact4V' alt="Interact4V"/>

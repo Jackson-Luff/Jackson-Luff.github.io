@@ -4,13 +4,15 @@
     <title> Projects! </title>
     <!-- Linking of dependencies -->
     <LINK rel="shortcut icon" href="Resources/Images/icon.ico">
-    <SCRIPT type="text/javascript" src="Resources/Deps/Trianglify.min.js"></SCRIPT>
-    <SCRIPT type="text/javascript" src="Resources/Deps/TextInjector.js"></SCRIPT>
+    <LINK rel="stylesheet" type="text/css" href="Resources/Scripts/codepen.css"/>
+    <LINK rel="stylesheet" type="text/css" href="Resources/Scripts/attribs.css"/>
+    <LINK rel="stylesheet" type="text/css" href="Resources/Scripts/3DButt/css/style.css">
     
-    <LINK rel="stylesheet" type="text/css" href="Resources/Deps/codepen.css"/>
-    <LINK rel="stylesheet" type="text/css" href="Resources/Deps/attribs.css"/>
-    <LINK rel="stylesheet" type="text/css" href="Resources/Deps/3DButt/css/style.css">
-    <div id="TrianglifyBackground"></div>
+    <SCRIPT type="text/javascript" src="Resources/Scripts/TextInjector.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="Resources/Scripts/jquery-2.1.4.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="Resources/Scripts/Trianglify.min.js"></SCRIPT>
+    <script type="text/javascript" src="Resources/Scripts/initcanvas.js"></script>
+    <canvas id = "backgroundCanvas"></canvas>
     
     <div class="Board">
         <a href="index.html"><h3>Jackson Luff</h3></a><br>
@@ -29,7 +31,7 @@
             </div></a>
     </div>
 </head>
-<body onLoad="SetUp()">
+<body>
     <div class="Board" id="Board_Curro">
         <h1> Curro </h1>
         <img src="Resources/Images/Projects/Curro_thumb.jpg" alt="Curro" class="ProjImgPreview"/>
@@ -40,7 +42,7 @@
             have experienced in our childhoods; with games such as Spyro and/or Jak and Daxter. <br>
             <b>[All gameplay intended for children of the age of 14 to 16 years of age] </b>
             <br><br>
-        <div class="button-normal" onClick="AppExtend(0)">Read More</div>
+        <div class="button-normal" onClick="AppExtend(0); initCanvas();">Read More</div>
         <br><br>
     </div>
 
@@ -55,7 +57,7 @@
             you see my physics engine (pink) and on the right, you see PhysX (blue). I really wish I <br>
             explored multi-threading prior to this as it would've improved the performance exponentially. <br>
         </p><br>
-        <div class="button-normal" onClick="AppExtend(1)">Read More</div>
+        <div class="button-normal" onClick="AppExtend(1); initCanvas();">Read More</div>
         <br><br>
     </div>
 
@@ -69,7 +71,7 @@
             version of the <b>Monte Carlo Tree Search algorithm</b>. MCTS for short, is a  heuristic search algorithm<br>
             of making decisions in some decision processes, most notably employed in game playing. <br>
         <br>
-        <div class="button-normal" onClick="AppExtend(2)">Read More</div>
+        <div class="button-normal" onClick="AppExtend(2); initCanvas();">Read More</div>
         <br><br>
         </p>
     </div>
@@ -83,7 +85,7 @@
             GenGein has undergone several different experiments that have proven it to  <br> be a useful
             product throughout my ongoing development. 
             <br><br>
-        <div class="button-normal" onClick="AppExtend(3)">Read More</div>
+        <div class="button-normal" onClick="AppExtend(3); initCanvas();">Read More</div>
         <br><br>
         </p>
     </div>
@@ -97,7 +99,7 @@
             points as possible without running out of time and tile space. The longer you're in <br>
             the game, the faster it takes for the columns to fall! <br>
             <br>
-        <div class="button-normal" onClick="AppExtend(4)">Read More</div>
+        <div class="button-normal" onClick="AppExtend(4); initCanvas();">Read More</div>
         <br><br>
         </p>
     </div>
@@ -110,17 +112,6 @@
             <b>Gravitas</b> was quite a simple yet wonderful game. The main mechanic of the game is that <br>
             you can manipulate gravity to rotate in any odd direction. This left open some pretty interesting<br>
             doors along the way of development. <br><br>
-            <div class="button-normal" onClick="AppExtend(5)">Read More</div><br><br>
+            <div class="button-normal" onClick="AppExtend(5); initCanvas();">Read More</div><br><br>
     </div>
-    <script>
-        document.getElementById( 'TrianglifyBackground' ).onwheel = function(event){
-    event.preventDefault();
-};
-
-document.getElementById( 'TrianglifyBackground' ).onmousewheel = function(event){
-    event.preventDefault();
-};
-    </script>
-    <footer>
-    </footer>
 </html>

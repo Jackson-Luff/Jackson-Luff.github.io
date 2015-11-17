@@ -1,6 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Michroma|Audiowide');
 
-
 div {
     image-rendering: -moz-crisp-edges;         /* Firefox */
     image-rendering:   -o-crisp-edges;         /* Opera */
@@ -10,19 +9,11 @@ div {
 }
 
 /* This HTML tag applied background*/
-#TrianglifyBackground{
-    height: 100%;
-    width: 100%;
+#backgroundCanvas {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top: 0;
+    left: 0;
     z-index: -1;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-     /* Stretches content of background to fit window size*/
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 
 HTML
@@ -181,7 +172,7 @@ P {
 }
 
 .MiniBoard:hover h3{
-    color: rgb(10,10,10);
+    color: rgb(0,0,0);
 }
 
 .MiniBoard img{
@@ -189,7 +180,7 @@ P {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    border:3px solid rgb(5,5,5);
+    border:3px solid rgb(0,0,0);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -205,7 +196,7 @@ P {
 }
 
 .MiniBoard:hover img {
-    border:3px solid rgb(125, 125, 125);
+    border:3px solid rgb(0,0,0);
 }
 
 .ProjImgPreview
