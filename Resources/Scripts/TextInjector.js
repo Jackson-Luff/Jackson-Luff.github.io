@@ -92,7 +92,7 @@ var Curro = {
     
     GetNormal : function(){
         var norm = Curro.GetCommon();
-        norm += '<div class="button-normal" onClick="AppExtend(0)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(0); initCanvas();">Read More</div>';
         norm += '<br><br>';
         norm += '</p>';
         return norm;
@@ -117,7 +117,7 @@ var Curro = {
         ext += 'For those interested in the source code [Unreal Engine 4.8.3]:<br>';
         ext += '<a href="https://github.com/Sedawrath/Curro" target="_blank">https://github.com/Sedawrath/Curro</a> <br></p>';
         ext += '</div><br>';
-        ext += '<div class="button-extended" onClick="AppDeExtend(0)">Read Less</div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(0); initCanvas();">Read Less</div>';
         ext += '<br><br><br>';
         return ext;
     }
@@ -142,7 +142,7 @@ var Physics = {
     GetNormal : function(){
         var norm = Physics.GetCommon();
         norm += '<br>';
-        norm += '<div class="button-normal" onClick="AppExtend(1)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(1); initCanvas();">Read More</div>';
         norm += '<br><br></p>';
         return norm;
     },
@@ -175,7 +175,7 @@ var Physics = {
         ext += '<br><div id="HyperLinks">';
         ext += 'Go check out <b> Phys Vs PhysX: </b><br> (Release build and source code inside)<br>';
         ext += '<a href="https://www.dropbox.com/s/wd0siewzn8j5ruf/Phys-Vs-PhysX.zip?dl=0">https://www.dropbox.com/GenGein/PhysVsPhysX.zip</a></div></p>';
-        ext += '<br><div class="button-extended" onClick="AppDeExtend(1)">Read Less</div>';
+        ext += '<br><div class="button-extended" onClick="AppDeExtend(1); initCanvas();">Read Less</div>';
         ext += '<br><br></p>';
         return ext;
     }
@@ -197,7 +197,7 @@ var Checkers = {
     
     GetNormal : function(){
         var norm = Checkers.GetCommon();
-        norm += '<div class="button-normal" onClick="AppExtend(2)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(2); initCanvas();">Read More</div>';
         norm += '<br><br></p>';
         return norm;
     },
@@ -216,7 +216,7 @@ var Checkers = {
         ext += '<div id="HyperLinks">';
         ext += 'Feeling interested? Go check it out! Sadly I misplaced the source code, but the release is here:<br>';
         ext += '<a href="https://www.dropbox.com/s/bzxl8unv5b9qnnn/Checkers.zip?dl=0">https://www.dropbox.com/GenGein/Checkers.zip</a></div><br>';
-        ext += '<div class="button-extended" onClick="AppDeExtend(2)">Read Less</div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(2); initCanvas();">Read Less</div>';
         ext += '<br><br></p>';
         return ext;
     }
@@ -237,7 +237,7 @@ var GenGein = {
     
     GetNormal : function(){
         var norm = GenGein.GetCommon();
-        norm += '<div class="button-normal" onClick="AppExtend(3)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(3); initCanvas();">Read More</div>';
         norm += '<br><br>';
         norm += '</p>';
         return norm;
@@ -257,7 +257,7 @@ var GenGein = {
         ext += 'https://github.com/Sedawrath/GenGein-Engine</a>';
         ext += '</div><br>';
         ext += '</p>';
-        ext += '<div class="button-extended" onClick="AppDeExtend(3)">Read Less</div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(3); initCanvas();">Read Less</div>';
         ext += '<br><br>';
         
         return ext;
@@ -279,7 +279,7 @@ var Columns = {
     
     GetNormal : function(){
         var norm = Columns.GetCommon();
-        norm += '<div class="button-normal" onClick="AppExtend(4)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(4); initCanvas();">Read More</div>';
         norm += '<br><br>';
         return norm;
     },
@@ -301,7 +301,7 @@ var Columns = {
         ext += '<div id="HyperLinks">';
         ext += "Oh, did I also mention you don't have to download this? Yeah, <a href='Resources/Columns_Game/index.html' target='_blank'a>click here.</a><br>";
         ext += '</div><br><br>';
-        ext += '<div class="button-extended" onClick="AppDeExtend(4)">Read Less</div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(4); initCanvas();">Read Less</div>';
         ext += '<br><br>';
         return ext;
     }
@@ -322,7 +322,7 @@ var Gravitas = {
     
     GetNormal : function(){
         var norm = Gravitas.GetCommon(); 
-        norm += '<div class="button-normal" onClick="AppExtend(5)">Read More</div>';
+        norm += '<div class="button-normal" onClick="AppExtend(5); initCanvas();">Read More</div>';
 	norm += '<br><br>';
 	norm += '</p>';
         return norm;
@@ -339,7 +339,7 @@ var Gravitas = {
         ext += 'Man, there really is no better feeling than playing your own game on such a device. <br><br>';
         ext += "<b>DISCLAIMER: Apologise. We're still trying to find the release build and source code.</b></p>";
         ext += '<br><br>';
-        ext += '<div class="button-extended" onClick="AppDeExtend(5)">Read Less</div>';
+        ext += '<div class="button-extended" onClick="AppDeExtend(5); initCanvas();">Read Less</div>';
 	ext += '<br><br>';
 	ext += '</p>';
         return ext;
