@@ -4,9 +4,11 @@
   <!-- Assigning the title -->
   <title> The Resume! </title>
     <!-- Linking of dependencies -->
+    <LINK rel="shortcut icon" href="Resources/Images/icon.ico"/>
+    <SCRIPT type="text/javascript" src="Resources/Deps/Trianglify.min.js"></SCRIPT>
     <LINK rel="stylesheet" type="text/css" href="Resources/Deps/codepen.css"/>
     <LINK rel="stylesheet" type="text/css" href="Resources/Deps/attribs.css"/>
-    <LINK rel="shortcut icon" href="Resources/Images/icon.ico">
+    <div id="TrianglifyBackground"></div>
     
     <div class="Board">
         <a href="index.html"><h3>Jackson Luff</h3></a><br>
@@ -26,7 +28,7 @@
     </div>
 </head>
 
-<body>
+<body onLoad="SetUp()">
   <div class="Board">
     <h1> Ahh, it seems you're interested! Brilliant!  </h1>
     <p>

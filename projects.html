@@ -3,12 +3,15 @@
     <!-- Assigning the title -->
     <title> Projects! </title>
     <!-- Linking of dependencies -->
+    <LINK rel="shortcut icon" href="Resources/Images/icon.ico">
+    <SCRIPT type="text/javascript" src="Resources/Deps/Trianglify.min.js"></SCRIPT>
     <SCRIPT type="text/javascript" src="Resources/Deps/TextInjector.js"></SCRIPT>
+    
     <LINK rel="stylesheet" type="text/css" href="Resources/Deps/codepen.css"/>
     <LINK rel="stylesheet" type="text/css" href="Resources/Deps/attribs.css"/>
     <LINK rel="stylesheet" type="text/css" href="Resources/Deps/3DButt/css/style.css">
-    <LINK rel="shortcut icon" href="Resources/Images/icon.ico">
-        
+    <div id="TrianglifyBackground"></div>
+    
     <div class="Board">
         <a href="index.html"><h3>Jackson Luff</h3></a><br>
 
@@ -26,7 +29,7 @@
             </div></a>
     </div>
 </head>
-<body>
+<body onLoad="SetUp()">
     <div class="Board" id="Board_Curro">
         <h1> Curro </h1>
         <img src="Resources/Images/Projects/Curro_thumb.jpg" alt="Curro" class="ProjImgPreview"/>
@@ -109,7 +112,15 @@
             doors along the way of development. <br><br>
             <div class="button-normal" onClick="AppExtend(5)">Read More</div><br><br>
     </div>
+    <script>
+        document.getElementById( 'TrianglifyBackground' ).onwheel = function(event){
+    event.preventDefault();
+};
 
+document.getElementById( 'TrianglifyBackground' ).onmousewheel = function(event){
+    event.preventDefault();
+};
+    </script>
     <footer>
     </footer>
 </html>

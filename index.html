@@ -5,10 +5,11 @@
     <!-- Assigning the title -->
     <title> Jackson Luff's Portfolio </title>
     <!-- Linking of dependencies -->
+    <LINK rel="shortcut icon" href="Resources/Images/icon.ico"/>
     <LINK rel="stylesheet" type="text/css" href="Resources/Deps/codepen.css"/>
     <LINK rel="stylesheet" type="text/css" href="Resources/Deps/attribs.css"/>
-    <LINK rel="shortcut icon" href="Resources/Images/icon.ico">
-    
+    <SCRIPT type="text/javascript" src="Resources/Deps/Trianglify.min.js"></SCRIPT>
+    <div id="TrianglifyBackground"></div>
     <div class="Board">
         <a href="index.html"><h3>Jackson Luff</h3></a><br>
 
@@ -27,7 +28,7 @@
   </div>
 </head>
 
-<body>
+<body onLoad="SetUp()">
   <div class="Board" id="MainBoard">
     <h1> Hello, and welcome to my portfolio! </h1>
 	<p>

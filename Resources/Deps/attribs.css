@@ -1,15 +1,33 @@
 @import url('http://fonts.googleapis.com/css?family=Michroma|Audiowide');
 
-/* This HTML tag applied background*/
-HTML
-{
-    /* Applies background url and attributes*/
-    background: url(../Images/background.jpg) no-repeat center center fixed;
 
-    /* Stretches content of background to fit window size*/
+div {
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+/* This HTML tag applied background*/
+#TrianglifyBackground{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+     /* Stretches content of background to fit window size*/
     -webkit-background-size: cover;
     background-size: cover;
+}
 
+HTML
+{   
+    -moz-osx-font-smoothing: grayscale;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +69,6 @@ P {
  */
 .Board 
 {
-    background-color: rgba(100,125,125,0.5);
     font-family: Roboto Condensed, sans-serif;
     font-size: 20px;
     margin-left:auto;
@@ -59,15 +76,29 @@ P {
     margin-bottom: 50px;
     padding: 15px;
     border-radius: 25px;
-    width:80%;
+    width: 90%;
+    max-width: 900px;
+    margin: 50px calc(50% - 450px);
     text-align-last:center;
-    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.4);
-    box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.Board a {
+    text-decoration: none;
+    color: #27609C;
+}
+.Board a:hover {
+    color: #D85151;
 }
 
 .ShaderBoard 
 {
-    background-color: rgba(100,125,125,0.5);
     font-family: Roboto Condensed, sans-serif;
     font-size: 20px;
     margin-left:auto;
@@ -75,32 +106,41 @@ P {
     margin-bottom: 50px;
     padding: 15px;
     border-radius: 25px;
-    border:10px solid rgb(50,50,50);
-    width:80%;
+    width: 90%;
+    max-width: 900px;
+    margin: 50px calc(50% - 450px);
     text-align-last:center;
-    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.4);
-    box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    background-color: rgba(255,255,255, 0.5);
 }
 
 .ShaderBoard img{
-    float:center;
     width:95%;
     height:auto;
     margin-top:20px;
     margin-bottom:50px;
-    border:5px solid rgb(50,50,50);
-    border-radius: 25px;
-}
+    border:3px solid rgb(0,0,0);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    }
 
 .ShaderSubBoard {
     display: inline-block;
-    background-color: rgba(25,45,45,0.2);
+    background-color: rgba(255,255,255,0.2);
     font-family: Michroma, sans-serif;
     font-size: 20px;
     margin: 10px;
     padding: 15px;
-    border-radius: 25px;
-    border:5px solid rgb(25, 25, 25);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:3px solid rgb(0,0,0);
     width:auto;
     height:60%;
     text-align-last:center;
@@ -112,25 +152,30 @@ P {
 .MiniBoard
 {
     display: inline-block;
-    background-color: rgba(25,45,45,0.6);
     font-family: Michroma, sans-serif;
     font-size: 20px;
-    margin: 20px;
     padding: 15px;
     border-radius: 25px;
-    border:5px solid rgb(25, 25, 25);
     width:20%;
     height:20%;
+    max-width: 800px;
+    margin: 50px;
     text-align-last:center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-user-select: none;
-    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 1px 0 0 rgba(255,255,255,0.298039) inset, 0 -1px 1px 0 rgba(255,255,255,0.14902) inset, 10px 10px 0px 0 rgba(0,0,0,0.2);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    background-color: rgba(255,255,255,0.5);
 }
 
-.MiniBoard h3 {
-    color: rgb(240,240,240);
+.MiniBoard h3{
+    text-decoration: none;
+    color: #000000;
     font-family: Audiowide, sans-serif;
     font-size: 24px;
 }
@@ -144,19 +189,23 @@ P {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    border:5px solid rgb(50,50,50);
-    border-radius: 5px;
+    border:3px solid rgb(5,5,5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     
     width: 90%;
     height: auto;
 }
 
 .MiniBoard:hover {
-    background-color: rgba(125,145,145,0.9);
+    width: 22%;
+    height:auto;
+    background-color: rgba(230,230,230,0.3);
 }
 
 .MiniBoard:hover img {
-    border:5px solid rgb(125, 125, 125);
+    border:3px solid rgb(125, 125, 125);
 }
 
 .ProjImgPreview
@@ -181,7 +230,6 @@ P {
 {
   max-width:32px;
   max-height:32px;
-  float: center;
   margin-left:auto;
   margin-right:auto;
   text-decoration: none;
@@ -208,8 +256,18 @@ P {
 #HyperLinks a:visited, a:focus { text-decoration: none; color:#4c4cff; }
 #HyperLinks a:hover, a:active { text-decoration: none; color:white }
 
-.Board a { text-decoration: none; }
 
+.button_base {
+	-webkit-box-shadow: none;
+	-moz-box-shadow:    none;
+	box-shadow:         none;
+}
+
+.b05_3d_roll div:nth-child(2) {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
 /* Rainbow colours
 #FF0000 - BvB
 #FF8000 - TinyTanks
