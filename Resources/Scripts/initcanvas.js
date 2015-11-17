@@ -1,3 +1,9 @@
+//==== BUG LIST ====//
+// 
+// - Upon the 'read less' button -> document does not condence.
+// 
+//====================//
+
 var settings;
 
 window.addEventListener('load', function(){
