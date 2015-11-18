@@ -50,7 +50,6 @@
 }
 
 .b05_3d_roll div:nth-child(1) {
-    color: rgb(220,220,255);
     background-color: #000000;
     border:3px solid white;
     border-radius: 5px;
@@ -68,8 +67,6 @@
 .b05_3d_roll div:nth-child(2) {
     color: #000000;
     background-color: rgba(256,256,256,1.0);
-    border:3px solid black;
-    border-radius: 5px;
     transform: rotateX(0deg);
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
@@ -79,10 +76,14 @@
     transform-origin: 50% 50% -25px;
     -webkit-transform-origin: 50% 50% -25px;
     -moz-transform-origin: 50% 50% -25px;
+    border:3px solid black;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
 .b05_3d_roll:hover div:nth-child(1) {
-    color: rgb(180,205,205);
+    color: #ffffff;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
