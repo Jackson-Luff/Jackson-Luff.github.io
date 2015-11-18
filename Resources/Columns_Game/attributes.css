@@ -30,9 +30,7 @@ P{
 }
 
 /* Applied attributes to the 'A' tag  */
-A{
-    /* Removes the ugly purple hyperlink colour */
-    color: inherit;
+a{
     /* Removes any applied styles (like hyperlink underline) */
     text-decoration: none;
 }

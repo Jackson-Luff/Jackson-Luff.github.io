@@ -81,8 +81,9 @@ P {
 }
 
 .Board a {
+    font-weight: bold;
     text-decoration: none;
-    color: #27609C;
+    color: #000000;
 }
 .Board a:hover {
     color: #D85151;
@@ -243,19 +244,6 @@ P {
     transform: rotate(-3deg);
 }
 
-#HyperLinks { font-weight:bold; color:#2a2a2a; }
-#HyperLinks a:visited, a:focus { text-decoration: none; color:#4c4cff; }
-#HyperLinks a:hover, a:active { text-decoration: none; color:rgb(200, 200, 200) }
-
-.button_base {
-	-webkit-box-shadow: none;
-	-moz-box-shadow:    none;
-	box-shadow:         none;
-}
-
-.b05_3d_roll div:nth-child(2) {
-	
-}
 /* Rainbow colours
 #FF0000 - BvB
 #FF8000 - TinyTanks

@@ -111,12 +111,10 @@ var Curro = {
         ext += "It's hard for me to put in to words, so why don't you go check it out yourself! There's links <br>";
         ext += 'down below where you can access the latest build of the game, as well as the source code. <br>';
         ext += "If you have any questions feel free to email me and I'll get back to you asap!<br><br>";
-        ext += '<div id="HyperLinks">';
         ext += 'For those interested in our latest build [Friday 06th Nov]:<br>';
         ext += '<a href="http://bit.ly/1lpHb8w" target="_blank">https://www.dropbox.com/Curro/Release/Curro06thNov.zip</a><br><br>';
         ext += 'For those interested in the source code [Unreal Engine 4.8.3]:<br>';
-        ext += '<a href="https://github.com/Sedawrath/Curro" target="_blank">https://github.com/Sedawrath/Curro</a> <br></p>';
-        ext += '</div><br>';
+        ext += '<a href="https://github.com/Sedawrath/Curro" target="_blank">https://github.com/Sedawrath/Curro</a> <br></p><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(0); initCanvas();">Read Less</div>';
         ext += '<br><br><br>';
         return ext;
@@ -172,9 +170,8 @@ var Physics = {
         ext += 'to run a <b>marching cubes</b> algorithm over the top to visually display the fluid. <br>';
         ext += '<br><b> All graphics shaders are featured in my SHADER tab above. </b><br>';
         ext += 'Urgh, enough talk! Go check it out yourself and spam me feedback!';
-        ext += '<br><div id="HyperLinks">';
         ext += 'Go check out <b> Phys Vs PhysX: </b><br> (Release build and source code inside)<br>';
-        ext += '<a href="https://www.dropbox.com/s/wd0siewzn8j5ruf/Phys-Vs-PhysX.zip?dl=0">https://www.dropbox.com/GenGein/PhysVsPhysX.zip</a></div></p>';
+        ext += '<a href="https://www.dropbox.com/s/wd0siewzn8j5ruf/Phys-Vs-PhysX.zip?dl=0">https://www.dropbox.com/GenGein/PhysVsPhysX.zip</a></p>';
         ext += '<br><div class="button-extended" onClick="AppDeExtend(1); initCanvas();">Read Less</div>';
         ext += '<br><br></p>';
         return ext;
@@ -213,9 +210,8 @@ var Checkers = {
         ext += 'Now to the visual side of things. Here we have a <b>skybox, real-time lighting and imported models</b><br>';
         ext += 'with textures -- All produced in my nifty little engine, <b>GenGein</b>. <br>';
         ext += 'This beautiful little piece was crafted by my good friend, <a href="https://www.artstation.com/artist/doodee"<b>Alex Kennedy</b></a>. <br>';
-        ext += '<div id="HyperLinks">';
         ext += 'Feeling interested? Go check it out! Sadly I misplaced the source code, but the release is here:<br>';
-        ext += '<a href="https://www.dropbox.com/s/bzxl8unv5b9qnnn/Checkers.zip?dl=0">https://www.dropbox.com/GenGein/Checkers.zip</a></div><br>';
+        ext += '<a href="https://www.dropbox.com/s/bzxl8unv5b9qnnn/Checkers.zip?dl=0">https://www.dropbox.com/GenGein/Checkers.zip</a><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(2); initCanvas();">Read Less</div>';
         ext += '<br><br></p>';
         return ext;
@@ -250,13 +246,11 @@ var GenGein = {
         ext += 'It has been proven to produce advanced projects, as proven down below!<br><br>';
         ext += 'Please take a look at my <b>Checkers</b> and <b> Phys Vs PhysX </b> projects <br> for an overview';
         ext += 'of "what lies beneath" in GenGein.<br><br>';
-        ext += "<div id='HyperLinks'>";
         ext += "If you're particularly interested; it's all open-source.";
         ext += "Here's the github link:<br>";
         ext += "<a href='https://github.com/Sedawrath/GenGein-Engine' target='_blank'>";
         ext += 'https://github.com/Sedawrath/GenGein-Engine</a>';
-        ext += '</div><br>';
-        ext += '</p>';
+        ext += '<br></p>';
         ext += '<div class="button-extended" onClick="AppDeExtend(3); initCanvas();">Read Less</div>';
         ext += '<br><br>';
         
@@ -298,9 +292,8 @@ var Columns = {
         ext += "How awesome's that?! Not to mention scores within the game are stored into the local repository<br>";
         ext += 'of the browser,. So, if you <b> REALLY </b> loved my game, you could actually spend<br>';
         ext += 'hours trying to beat your highscore... Hint, hint. <br>';
-        ext += '<div id="HyperLinks">';
-        ext += "Oh, did I also mention you don't have to download this? Yeah, <a href='Resources/Columns_Game/index.html' target='_blank'a>click here.</a><br>";
-        ext += '</div><br><br>';
+        ext += "Oh, did I also mention you don't have to download this? Yeah, <a href='Resources/Columns_Game/Index.html' target='_blank'a>click here.</a><br>";
+        ext += '<br><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(4); initCanvas();">Read Less</div>';
         ext += '<br><br>';
         return ext;
