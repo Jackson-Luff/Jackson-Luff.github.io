@@ -67,9 +67,9 @@ P {
     margin-bottom: 50px;
     padding: 15px;
     border-radius: 25px;
-    width: 90%;
-    max-width: 900px;
-    margin: 50px calc(50% - 450px);
+    width: 75%;
+    max-width: 850px;
+    margin: 50px calc(50% - 425px);
     text-align-last:center;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
