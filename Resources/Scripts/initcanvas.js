@@ -1,7 +1,7 @@
 //==== BUG LIST ====//
 // 
 // - Upon the 'read less' button -> document does not condence.
-// 
+// - readmore buttons dont resize on mobile
 //====================//
 
 var settings;
