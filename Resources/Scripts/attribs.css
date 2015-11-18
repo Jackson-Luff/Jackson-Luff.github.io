@@ -83,10 +83,11 @@ P {
 .Board a {
     font-weight: bold;
     text-decoration: none;
-    color: #000000;
+    color: white;
 }
 .Board a:hover {
-    color: #D85151;
+    font-size: 22px;
+    color: lightgrey;
 }
 
 .ShaderBoard 
