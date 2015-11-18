@@ -1,7 +1,11 @@
 @import url('http://fonts.googleapis.com/css?family=Michroma|Audiowide');
 
-div {
-    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+div { 
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 /* This HTML tag applied background*/
