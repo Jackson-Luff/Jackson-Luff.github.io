@@ -87,7 +87,7 @@ var ColMan = function( size, cellSize )
         this.botGem.sprite.setPositionY( this.botGem.sprite.getPositionY() - (cellSize.y * 0.75));
         
         this.genNxtCol(si);
-        this.genNxtCol(cc.p((size.width /2.1) / cellSize.x, size.height * 0.75 / cellSize.y));
+        this.genNxtCol(cc.p((size.width /2) / cellSize.x, size.height * 0.7 / cellSize.y));
                 
         this.nxtTop.sprite.setScale(0.5, 0.5);
         this.nxtMid.sprite.setScale(0.5, 0.5);

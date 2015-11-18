@@ -56,5 +56,5 @@ function LoadInitialScene()
     PlaySoundEffect( sVariousBirdsFx, true, 0.05);
     
     //Accesses ChangeScene to load up the first scene
-    ChangeScene( SplashScreen );
+    ChangeScene( MainGame );
 }

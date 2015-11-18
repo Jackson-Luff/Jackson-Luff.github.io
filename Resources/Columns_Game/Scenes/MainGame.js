@@ -11,7 +11,6 @@ var MainGame =
     displayHUD : null,    //masked HUD
     scoreDisplay : null,  //Displays Score
     streakCount : null,   //Displays overall matches made
-    displayNextCol : null,
     menuButt : null,
     transButt : null,
     spawnTimer : null,
@@ -63,7 +62,7 @@ var MainGame =
         
         this.streakCount = new CreateFont(
                 "0",
-                "System Bold", 32, 
+                "Lucida Console, Monaco, monospace", 32, 
                 size.width / 3, size.height / 1.09,
                 new cc.Color(112, 52, 30));
                 

@@ -49,8 +49,9 @@ a{
 {
     /* The background imitates the HTML background */
     background: url(Resources/Images/canvBack.png) no-repeat center center fixed;
-    
-    /* Stretches canvas background over*/
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
     -webkit-background-size: cover;
     background-size: cover;
 }
