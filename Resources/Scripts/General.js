@@ -4,7 +4,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#ProGen_Img").attr("src", "Resources/Images/Shaders/ProGen.gif");
+            $("#ProGen_Img").attr("src", "Resources/Images/Shaders/ProGen_25.gif");
         },
         function()
         {
@@ -18,7 +18,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#InteractV1_Img").attr("src", "Resources/Images/Shaders/InteractV1.gif");
+            $("#InteractV1_Img").attr("src", "Resources/Images/Shaders/InteractV1_25.gif");
         },
         function()
         {
@@ -30,7 +30,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#InteractV2_Img").attr("src", "Resources/Images/Shaders/InteractV2.gif");
+            $("#InteractV2_Img").attr("src", "Resources/Images/Shaders/InteractV2_25.gif");
         },
         function()
         {
@@ -42,7 +42,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#InteractV3_Img").attr("src", "Resources/Images/Shaders/InteractV3.gif");
+            $("#InteractV3_Img").attr("src", "Resources/Images/Shaders/InteractV3_25.gif");
         },
         function()
         {
@@ -54,7 +54,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#InteractV4_Img").attr("src", "Resources/Images/Shaders/InteractV4.gif");
+            $("#InteractV4_Img").attr("src", "Resources/Images/Shaders/InteractV4_25.gif");
         },
         function()
         {
@@ -68,7 +68,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#Particles_Spiral_Img").attr("src", "Resources/Images/Shaders/Particles_Spiral.gif");
+            $("#Particles_Spiral_Img").attr("src", "Resources/Images/Shaders/Particles_Spiral_25.gif");
         },
         function()
         {
@@ -80,7 +80,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#Particles_Morph_Img").attr("src", "Resources/Images/Shaders/Particles_Morph.gif");
+            $("#Particles_Morph_Img").attr("src", "Resources/Images/Shaders/Particles_Morph_25.gif");
         },
         function()
         {
@@ -94,7 +94,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#Water_Img").attr("src", "Resources/Images/Shaders/Water.gif");
+            $("#Water_Img").attr("src", "Resources/Images/Shaders/Water_25.gif");
         },
         function()
         {
@@ -106,7 +106,7 @@ $(window).ready(function()
         function()
         {
             initCanvas();
-            $("#WatchDogs_Img").attr("src", "Resources/Images/Shaders/WatchDogs.gif");
+            $("#WatchDogs_Img").attr("src", "Resources/Images/Shaders/WatchDogs_25.gif");
         },
         function()
         {
