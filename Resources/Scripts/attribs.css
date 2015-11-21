@@ -109,11 +109,11 @@ P {
     -moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.75);
     background-color: rgba(0,0,0,0.3);
-    -webkit-transition: background-color 250ms linear;
-   -moz-transition: background-color 250ms linear;
-   -o-transition: background-color 250ms linear;
-   -ms-transition: background-color 250ms linear;
-   transition: background-color 250ms linear;
+    -webkit-transition: background-color 200ms linear;
+   -moz-transition: background-color 200ms linear;
+   -o-transition: background-color 200ms linear;
+   -ms-transition: background-color 200ms linear;
+   transition: background-color 200ms linear;
 }
 
 .MiniBoard h3{
@@ -138,15 +138,12 @@ P {
 }
 
 .MiniBoard:hover {
-   width: 21%;
-   height: auto;
-   margin: 44px;
-   background-color: rgba(0,0,0,0.5);;
-   -webkit-transition: background-color 250ms linear;
-   -moz-transition: background-color 250ms linear;
-   -o-transition: background-color 250ms linear;
-   -ms-transition: background-color 250ms linear;
-   transition: background-color 250ms linear;
+   background-color: rgba(0,0,0,0.7);;
+   -webkit-transition: background-color 200ms linear;
+   -moz-transition: background-color 200ms linear;
+   -o-transition: background-color 200ms linear;
+   -ms-transition: background-color 200ms linear;
+   transition: background-color 200ms linear;
 }
 
 .MiniBoard:hover img {
