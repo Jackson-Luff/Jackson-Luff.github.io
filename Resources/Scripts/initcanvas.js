@@ -30,15 +30,14 @@ function loadSettings(settings){
     var settings = {
       cell_size: 75,
       variance: 0.75,
-      x_colors: 'random',
+      x_colors: 'Spectral',
       y_colors: 'match_x',
       palette: Trianglify.colorbrewer,
       color_space: 'lab',
       color_function: false,
       stroke_width: 1.51,
       width: width,
-      height: height,
-      seed: null
+      height: height
     };
  
     return settings;

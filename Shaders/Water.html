@@ -23,8 +23,8 @@ and open the template in the editor.
             <a href="../index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
                 <div>WHAT</div><div>HOME</div>
                 </div></a>
-            <a href="../resume.html" id="ResumeButt"><div class="button_base b05_3d_roll">
-                <div>IS</div><div>RESUME</div>
+            <a href="Resources/Jackson Luff - CV.pdf" target="_blank" download="CV"><div class="button_base b05_3d_roll">
+            <div>IS</div><div>RESUM&Eacute</div>
                 </div></a>
             <a href="../projects.html" id="ProjectButt"><div class="button_base b05_3d_roll">
                 <div>THIS</div><div>PROJECTS</div>
@@ -36,15 +36,30 @@ and open the template in the editor.
     </head>
     <body>
 	<div class="ShaderBoard" style="p {float:left;}">
-        <h1>Water Shader</h1>           
-        <img src="../Resources/Images/Shaders/Water_75.gif" id='Shaders_Water' alt="Water"/>
-        <div class="ShaderSubBoard">
+        <h1>Water Generation</h1>
+        <img src="../Resources/Images/Shaders/Water_75.gif" id='Shaders_Water' alt="Water" style="width:90%; height:auto; margin-bottom:20px;"/>
+        <div class="Board" style='background-color: rgba(0,0,0,0.2);'>
             <p>
-                FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
-                FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
-                FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL
+                I've spent quite a long time looking into water generation.
+                This particular endevour was found after learning about
+                procedural generation and I thought i'd explore the area.
+                I'm just running some perlin-noise patterns within the
+                fragment shader, as well as having a very slight wave
+                effect within my vertex shader code. 
+                <br><br>
+                <b>Break down: </b> within this pattern I sample five times within fbm (which per octave iterates over <b>cnoise</b>),
+                and combine the result, creating the illusion of <b>two perlin maps going over 
+                the top of each other</b>. This is done not only with time, but also with varied
+                lacunarity and gain. <b>Lacunarity</b> is a counterpart to the fractal dimension 
+                that describes the texture of a fractal. <b>Gain</b> alters the definition by intensifying
+                the detail the smaller the sample is. 
+                <br><br>
+                Yes, I know this is not an efficient method what so ever, but for the sake of demonstration,
+                I thought this one would be much more favoured If I were to make this within a game I would
+                actually sample several pre-processed noise textures that vary from perlin-noise, simplex 
+                and diamond-square.
             </p>
-        </div><br><br>
+        </div>
         <iframe src="http://pastebin.com/embed_iframe.php?i=5UaQkv3G" style="border:none;width:95%;height:500px;"></iframe>
 	</div>
 	</body>
