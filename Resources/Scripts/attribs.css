@@ -231,21 +231,16 @@ P {
 
 .ShaderSubBoard {
     display: inline-block;
-    background-color: rgba(255,255,255,0.2);
-    font-family: Michroma, sans-serif;
+    background-color: rgba(0,0,0,0.2);
+    font-family: Roboto Condensed, sans-serif;
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 50px;
-    padding:20px;
+    width:90%;
+    height:auto;
     -webkit-box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.75);
-    width:90%;
-    height:auto;
-    text-align-last:center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-user-select: none;
 }
 
 /* Rainbow colours
