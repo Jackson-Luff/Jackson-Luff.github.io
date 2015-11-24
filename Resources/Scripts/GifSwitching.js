@@ -13,60 +13,60 @@ $(window).ready(function()
     
     /// ================== INTERACTIVE TEXTURS CHUNK =======================
     
-    $("#Shader_InteractV1").hover(
+    $("#Shader_FutureTiles").hover(
         function()
         {
-            $("#InteractV1_Img").attr("src", "Resources/Images/Shaders/InteractV1_25.gif");
+            $("#FutureTiles_Img").attr("src", "Resources/Images/Shaders/FutureTiles_25.gif");
         },
         function()
         {
-            $("#InteractV1_Img").attr("src", "Resources/Images/Shaders/InteractV1.jpg");
+            $("#FutureTiles_Img").attr("src", "Resources/Images/Shaders/FutureTiles.jpg");
         }
     );
     
-    $("#Shader_InteractV2").hover(
+    $("#Shader_InterPixelation").hover(
         function()
         {
-            $("#InteractV2_Img").attr("src", "Resources/Images/Shaders/InteractV2_25.gif");
+            $("#InterPixelation_Img").attr("src", "Resources/Images/Shaders/InterPixelation_25.gif");
         },
         function()
         {
-            $("#InteractV2_Img").attr("src", "Resources/Images/Shaders/InteractV2.jpg");
+            $("#InterPixelation_Img").attr("src", "Resources/Images/Shaders/InterPixelation.jpg");
         }
     );
     
-    $("#Shader_InteractV3").hover(
+    $("#Shader_IrisSequence").hover(
         function()
         {
-            $("#InteractV3_Img").attr("src", "Resources/Images/Shaders/InteractV3_25.gif");
+            $("#IrisSequence_Img").attr("src", "Resources/Images/Shaders/IrisSequence_25.gif");
         },
         function()
         {
-            $("#InteractV3_Img").attr("src", "Resources/Images/Shaders/InteractV3.jpg");
+            $("#IrisSequence_Img").attr("src", "Resources/Images/Shaders/IrisSequence.jpg");
         }
     );
     
-    $("#Shader_InteractV4").hover(
+    $("#Shader_DisGlow").hover(
         function()
         {
-            $("#InteractV4_Img").attr("src", "Resources/Images/Shaders/InteractV4_25.gif");
+            $("#DisGlow_Img").attr("src", "Resources/Images/Shaders/DisGlow_25.gif");
         },
         function()
         {
-            $("#InteractV4_Img").attr("src", "Resources/Images/Shaders/InteractV4.jpg");
+            $("#DisGlow_Img").attr("src", "Resources/Images/Shaders/DisGlow.jpg");
         }
     );
     
     /// ================== PARTICLES CHUNK =======================
     
-    $("#Shader_Particles_Spiral").hover(
+    $("#Shader_BlackHole").hover(
         function()
         {
-            $("#Particles_Spiral_Img").attr("src", "Resources/Images/Shaders/Particles_Spiral_25.gif");
+            $("#BlackHole_Img").attr("src", "Resources/Images/Shaders/BlackHole_25.gif");
         },
         function()
         {
-            $("#Particles_Spiral_Img").attr("src", "Resources/Images/Shaders/Particles_Spiral.jpg");
+            $("#BlackHole_Img").attr("src", "Resources/Images/Shaders/BlackHole.jpg");
         }
     );
     

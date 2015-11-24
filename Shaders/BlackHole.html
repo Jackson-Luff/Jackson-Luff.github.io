@@ -22,30 +22,40 @@ and open the template in the editor.
 
             <a href="../index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
                 <div>WHAT</div><div>HOME</div>
-            </div></a>
+                </div></a>
             <a href="Resources/Jackson Luff - CV.pdf" target="_blank" download="CV"><div class="button_base b05_3d_roll">
-                <div>IS</div><div>RESUM&Eacute</div>
-            </div></a>
+            <div>IS</div><div>RESUM&Eacute</div>
+                </div></a>
             <a href="../projects.html" id="ProjectButt"><div class="button_base b05_3d_roll">
                 <div>THIS</div><div>PROJECTS</div>
-            </div></a>
+                </div></a>
             <a href="../shaders.html" id="ShaderButt"><div class="button_base b05_3d_roll">
                 <div>PLACE?</div><div>SHADERS</div>
-            </div></a>
+                </div></a>
         </div>
     </head>
     <body>
 	<div class="ShaderBoard" style="p {float:left;}">
-            <h1>Interact V4</h1>           
-            <img src="../Resources/Images/Shaders/InteractV4_75.gif" id='Shaders_Interact4V' alt="Interact4V"/>
+            <h1>Black Hole</h1>           
+            <img src="../Resources/Images/Shaders/BlackHole_75.gif" id='Shaders_BlackHole' alt="BlackHole"/>
             <div class="ShaderSubBoard">
             <p>
-                FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
-                FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
-                FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL
+                In this demo, I create a particle behaviour, emulating the visualisation of a black hole.<br>
+                Since these are GPU particles, I had to create an update loop on the GPU, through a vertex shader.<br>
+                What is interesting in this demonstration is how the particles behave. It's a mildly complex<br>
+                mathematical algorithm that evolves over time, unravelling an undetermined spiral. <br>
+                <br>
+                Within this update, there are various factors that alter the birth of this spiral. Lets start with <br>
+                the emitterPosition within itself. In order to have that 3-Dimensional spawn effect, I had to have <br>
+                the emitter alter positions on the parameter of a sphere. Creating a 'wave' effect.
+                <br>
+                Once spawn is determined, the particle velocity is then ran through a trigonometric algorithm<br>
+                which determines the curvature (nature) of the particles directional vector.<br>
+                <br>
+                This <b>black hole</b> particle demonstration was made in <b>GenGein</b>.<br>
             </p>
             </div><br><br>
-            <iframe src="http://pastebin.com/embed_iframe.php?i=MRHSKAyX"></iframe>
+            <iframe src="http://pastebin.com/embed_iframe.php?i=eLrBQ1wU"></iframe>
 	</div>
 	</body>
 </html>
