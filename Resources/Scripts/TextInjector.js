@@ -102,9 +102,9 @@ var Curro = {
         var ext = Curro.GetCommon();
         ext += 'Curro awakens from timeless sleep and into a beautifully mysterious world, overgrown with <br>';
         ext += 'natural wonders and curiosity. "Curro!" - said The Grand Tree. "Wahh..? Hello?" - Said Curro <br><br>';
-        ext += 'Soon after, Curro sets off on a quest given by The Grand Tree, to revitalize this sick and forsaken <br>';
-        ext += 'world.<b>Eco-orbs</b> are scattered wondrously throughout the land. At first deceivingly pointless, <br>';
-        ext += 'but upon voyaging, Curro soon realises <b>shrines</b> need orbs to infuse the world with health.<br><br>';
+        ext += 'Soon after, Curro sets off on a quest given by The Grand Tree, to revitalize this sick and <br>';
+        ext += 'forsaken world.<b>Eco-orbs</b> are scattered wondrously throughout the land. At first deceivingly<br>';
+        ext += 'pointless, but upon voyaging, Curro soon realises <b>shrines</b> need orbs to infuse the world with health.<br><br>';
         ext += 'There are three shrines. Each shrine activated increases the spirit of The Grand Tree. As you <br>';
         ext += 'heal The Grand Tree, he will reward you along your way by unveiling land, unleashing birds<br>';
         ext += 'And.. Wait for it... Wait for it... Activate amazing matinee shots of the island.<br><br>';
@@ -187,8 +187,8 @@ var Checkers = {
         com += '<img src="Resources/Images/Projects/Checkers_thumb1.jpg" alt="Checkers" class="ProjImgPreview"/>';
         com += '<p><b> Checkers </b> is a 3D interactive demo that was produce over a period of about 8 weeks. <br>';
         com += 'Within <i>Checkers</i>, you  play against a fairly competitive <b>AI</b> that is using a modified <br>';
-        com += 'version of the <b>Monte Carlo Tree Search algorithm</b>. MCTS for short, is a  heuristic search algorithm<br>';
-        com += 'of making decisions in some decision processes, most notably employed in game playing.<br>';
+        com += 'version of the <b>Monte Carlo Tree Search algorithm</b>. MCTS for short, is a  heuristic search<br>';
+        com += 'algorithm of making decisions in some decision processes, most notably employed in game playing.<br>';
         return com;
     },
     
@@ -202,15 +202,15 @@ var Checkers = {
     GetExtended : function(){
         var ext = Checkers.GetCommon();
         ext += '<br>Pretty much what I ended up doing is writing up a fairly decent AI that cycled through about <br>';
-        ext += '80 playthroughs at a depth of 10 random plays, for each randomly selected move piece, per turn.<br>';
-        ext += "What this resulted with was a very clear statistic that determines the AI's best chance of winning. <br><br>";
+        ext += '80 playthroughs at a depth of 10 random plays, for each randomly selected move piece, per<br>';
+        ext += "turn. From this, the AI then knew of the best play to approach. <br><br>";
         ext += "Aside from having AI implemented, this also was my first use of <b>FMOD's Low Level API</b>. <br>";
         ext += 'Sounds are layed out on players movements as well as having a glistening audio track in the <br>';
         ext += "background, to create a <b>gentlemen's club atmosphere</b>.<br><br>";
-        ext += 'Now to the visual side of things. Here we have a <b>skybox, real-time lighting and imported models</b><br>';
-        ext += 'with textures -- All produced in my nifty little engine, <b>GenGein</b>. <br>';
+        ext += 'Now to the visual side of things. Here we have a <b>skybox, real-time lighting and imported<br>';
+        ext += 'models with textures</b> -- All produced in my nifty little engine, <b>GenGein</b>. <br>';
         ext += 'This beautiful little piece was crafted by my good friend, <a href="https://www.artstation.com/artist/doodee"<b>Alex Kennedy</b></a>. <br>';
-        ext += 'Feeling interested? Go check it out! Sadly I misplaced the source code, but the release is here:<br>';
+        ext += '<br>Feeling interested? Go check out the release here:<br>';
         ext += '<a href="https://www.dropbox.com/s/bzxl8unv5b9qnnn/Checkers.zip?dl=0">https://www.dropbox.com/GenGein/Checkers.zip</a><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(2); initCanvas();">Read Less</div>';
         ext += '<br><br></p>';
@@ -287,12 +287,12 @@ var Columns = {
         ext += 'As you can clearly tell, even as of a year ago I still loved pretty things! Pretty awesome<br>';
         ext += 'to see that carry through! Although in saying that, <b> I do not own the art content of this game</b>. <br>';
         ext += '<br>';
-        ext += 'What I found really interesting with making this game was not even the game, but the functions<br>';
-        ext += 'within the menu. On the mainmenu area is an in built weather API with real-time visual feedback<br>';
-        ext += "How awesome's that?! Not to mention scores within the game are stored into the local repository<br>";
-        ext += 'of the browser,. So, if you <b> REALLY </b> loved my game, you could actually spend<br>';
-        ext += 'hours trying to beat your highscore... Hint, hint. <br>';
-        ext += "Oh, did I also mention you don't have to download this? Yeah, <a href='Resources/Columns_Game/Index.html' target='_blank'a>click here.</a><br>";
+        ext += 'What I found really interesting with making this game was not even the game, but the<br>';
+        ext += 'functions within the menu. On the mainmenu area is an in built weather API with real-time<br>';
+        ext += "How awesome's that?! Not to mention scores within the game are stored into the local<br>";
+        ext += 'repository visual feedback of the browser,. So, if you <b> REALLY </b> loved my game, you <br>';
+        ext += 'could actually spend hours trying to beat your highscore... Hint, hint. <br>';
+        ext += "<br>Oh, did I also mention you don't have to download this? Yeah, <a href='Resources/Columns_Game/Index.html' target='_blank'a>click here.</a><br>";
         ext += '<br><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(4); initCanvas();">Read Less</div>';
         ext += '<br><br>';
@@ -308,8 +308,8 @@ var Gravitas = {
 	com += '<img src="Resources/Images/Projects/Gravitas_thumb.jpg" alt="Gravitas" class="ProjImgPreview"/>';
 	com += '<img src="Resources/Images/Projects/Gravitas_thumb1.jpg" alt="Gravitas" class="ProjImgPreview"/><p>';
 	com += '<b>Gravitas</b> was quite a simple yet wonderful game. The main mechanic of the game is that <br>';
-        com += 'you can manipulate gravity to rotate in any odd direction. This left open some pretty interesting<br>';
-        com += 'doors along the way of development.<br><br>';
+        com += 'you can manipulate gravity to rotate in any odd direction. This left open some pretty ';
+        com += 'interesting doors along the way of development.<br><br>';
         return com;
     },
     
@@ -323,9 +323,9 @@ var Gravitas = {
     
     GetExtended : function(){
         var ext = Gravitas.GetCommon();
-        ext += 'Gravtias was developed in a period of 8 weeks and constructed by 3 programmers in C# Monodev.<br>';
-        ext += "Theoretically to push out what we did if it were from scratch would've taken an incredibly<br>";
-        ext += 'long time, but thanks to the wonderful physics engine, <b>Farseer Physics</b> we pushed <br>';
+        ext += 'Gravtias was developed in a period of 8 weeks and constructed by 3 programmers in C#<br>';
+        ext += "Monodev. Theoretically to push out what we did if it were from scratch would've taken an<br>";
+        ext += 'incredibly long time, but thanks to the wonderful physics engine, <b>Farseer Physics</b> we pushed <br>';
         ext += 'along our schedule quite fittingly. <br><br>';
         ext += 'Now, to the most interesting part about Gravitas; Thanks to Monodev for porting functionality<br>';
         ext += 'and AIE for having PS Vita dev kits, we were able to build our game onto a PS Vita.<br>';
