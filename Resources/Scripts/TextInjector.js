@@ -100,16 +100,13 @@ var Curro = {
     
     GetExtended : function(){
         var ext = Curro.GetCommon();
-        ext += 'Curro awakens from timeless sleep and into a beautifully mysterious world, overgrown with <br>';
-        ext += 'natural wonders and curiosity. "Curro!" - said The Grand Tree. "Wahh..? Hello?" - Said Curro <br><br>';
-        ext += 'Soon after, Curro sets off on a quest given by The Grand Tree, to revitalize this sick and <br>';
-        ext += 'forsaken world.<b>Eco-orbs</b> are scattered wondrously throughout the land. At first deceivingly<br>';
-        ext += 'pointless, but upon voyaging, Curro soon realises <b>shrines</b> need orbs to infuse the world with health.<br><br>';
-        ext += 'There are three shrines. Each shrine activated increases the spirit of The Grand Tree. As you <br>';
-        ext += 'heal The Grand Tree, he will reward you along your way by unveiling land, unleashing birds<br>';
-        ext += 'And.. Wait for it... Wait for it... Activate amazing matinee shots of the island.<br><br>';
-        ext += "It's hard for me to put in to words, so why don't you go check it out yourself! There's links <br>";
-        ext += 'down below where you can access the latest build of the game, as well as the source code. <br>';
+		ext += 'Within this project, I was the the project lead, program lead and co-design lead. Although<br>';
+		ext += 'That was a lot on my plate, things went surprisingly well. My role within Curro was gameplay<br>';
+		ext += "focused and to ensure the player's experience was memorable. I programmed all gameplay  <br>";
+		ext += 'elements that are within both Curro and the bird. Not only the character movement but also <br>';
+		ext += 'the possession.<br><br>';
+		ext += 'Within this project I demonstrated <b>sophisticated team management, leadership ethics </b>and <br>';
+		ext += 'how to re-scope when people or time gets cut.<br>';
         ext += "If you have any questions feel free to email me and I'll get back to you asap!<br><br>";
         ext += 'For those interested in our latest build [Friday 06th Nov]:<br>';
         ext += '<a href="http://bit.ly/1lpHb8w" target="_blank">https://www.dropbox.com/Curro/Release/Curro06thNov.zip</a><br><br>';
@@ -129,7 +126,7 @@ var Physics = {
         com += '<img src="Resources/Images/Projects/Physics_thumb.jpg" alt="Physics" class="ProjImgPreview"/>';
         com += '<img src="Resources/Images/Projects/Physics_thumb1.jpg" alt="Physics" class="ProjImgPreview"/><p>';
         com += '<b> Phys vs PhysX </b> was a pretty interesting topic that went for about 8 weeks in development.<br>';
-        com += 'This application is made 100% within my own engine <b>GenGein</b>. Suck a beautiful piece. <br>';
+        com += 'This application is made 100% within my own engine <b>GenGein</b>. Such a beautiful piece. <br>';
         com += "This neat little tech' demo was my way of showing off both physics and graphics. On the left <br>";
         com += 'you see my physics engine (pink) and on the right, you see PhysX (blue). I really wish I <br>';
         com += "explored multi-threading prior to this as it would've improved the performance exponentially. <br>";
