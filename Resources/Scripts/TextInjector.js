@@ -108,16 +108,16 @@ var Curro = {
 		ext += 'Within this project I demonstrated <b>sophisticated team management, leadership ethics </b>and <br>';
 		ext += 'how to re-scope when people or time gets cut.<br>';
         ext += "If you have any questions feel free to email me and I'll get back to you asap!<br><br>";
-        ext += 'For those interested in our latest build [Friday 06th Nov]:<br>';
-        ext += '<a href="http://bit.ly/1lpHb8w" target="_blank">https://www.dropbox.com/Curro/Release/Curro06thNov.zip</a><br><br>';
-        ext += 'For those interested in the source code [Unreal Engine 4.8.3]:<br>';
+        ext += '<b>For those interested in our latest build (159.91mb)<br>';
+        ext += '<a href="http://bit.do/Curro_Final-Zip" target="_blank">https://www.dropbox.com/Curro/Release/Curro06thNov.zip</a><br><br>';
+        ext += 'For those interested in the source code [Unreal Engine 4.8.3]:<br></b>';
         ext += '<a href="https://github.com/Sedawrath/Curro" target="_blank">https://github.com/Sedawrath/Curro</a> <br></p><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(0); initCanvas();">Read Less</div>';
         ext += '<br><br><br>';
         return ext;
     }
 };
-// ============ CURRO ==============
+// ============ PHYSICS ==============
 var Physics = {
     
     GetCommon : function(){
@@ -167,14 +167,14 @@ var Physics = {
         ext += 'to run a <b>marching cubes</b> algorithm over the top to visually display the fluid. <br>';
         ext += '<br><b> All graphics shaders are featured in my SHADER tab above. </b><br>';
         ext += 'Urgh, enough talk! Go check it out yourself and spam me feedback!';
-        ext += 'Go check out <b> Phys Vs PhysX: </b><br> (Release build and source code inside)<br>';
+        ext += '<br><b><br>Go check out  Phys Vs PhysX (59.28mb) </b><br> (Release build and source code inside)<br>';
         ext += '<a href="https://www.dropbox.com/s/wd0siewzn8j5ruf/Phys-Vs-PhysX.zip?dl=0">https://www.dropbox.com/GenGein/PhysVsPhysX.zip</a></p>';
         ext += '<br><div class="button-extended" onClick="AppDeExtend(1); initCanvas();">Read Less</div>';
         ext += '<br><br></p>';
         return ext;
     }
 };
-// ============ CURRO ==============
+// ============ CHECKERS ==============
 var Checkers = {
     
     GetCommon : function(){
@@ -207,7 +207,7 @@ var Checkers = {
         ext += 'Now to the visual side of things. Here we have a <b>skybox, real-time lighting and imported<br>';
         ext += 'models with textures</b> -- All produced in my nifty little engine, <b>GenGein</b>. <br>';
         ext += 'This beautiful little piece was crafted by my good friend, <a href="https://www.artstation.com/artist/doodee"<b>Alex Kennedy</b></a>. <br>';
-        ext += '<br>Feeling interested? Go check out the release here:<br>';
+        ext += '<b><br>Feeling interested? Go check out the release here (59.79mb)</b><br>';
         ext += '<a href="https://www.dropbox.com/s/bzxl8unv5b9qnnn/Checkers.zip?dl=0">https://www.dropbox.com/GenGein/Checkers.zip</a><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(2); initCanvas();">Read Less</div>';
         ext += '<br><br></p>';
@@ -243,8 +243,8 @@ var GenGein = {
         ext += 'It has been proven to produce advanced projects, as proven down below!<br><br>';
         ext += 'Please take a look at my <b>Checkers</b> and <b> Phys Vs PhysX </b> projects <br> for an overview';
         ext += 'of "what lies beneath" in GenGein.<br><br>';
-        ext += "If you're particularly interested; it's all open-source.";
-        ext += "Here's the github link:<br>";
+        ext += "<b>If you're particularly interested; it's all open-source.";
+        ext += "<br>Here's the github link (193mb) <br></b>";
         ext += "<a href='https://github.com/Sedawrath/GenGein-Engine' target='_blank'>";
         ext += 'https://github.com/Sedawrath/GenGein-Engine</a>';
         ext += '<br></p>';
@@ -327,7 +327,8 @@ var Gravitas = {
         ext += 'Now, to the most interesting part about Gravitas; Thanks to Monodev for porting functionality<br>';
         ext += 'and AIE for having PS Vita dev kits, we were able to build our game onto a PS Vita.<br>';
         ext += 'Man, there really is no better feeling than playing your own game on such a device. <br><br>';
-        ext += "<b>DISCLAIMER: Apologise. We're still trying to find the release build and source code.</b></p>";
+        ext += "<b>We finally found it! Check out the build and source code (2.39mb)</b><br>";
+		ext += "<a href='http://bit.do/Gravitas-zip'>http://Dropbox.com/Gravitas-zip</a></p>";
         ext += '<br><br>';
         ext += '<div class="button-extended" onClick="AppDeExtend(5); initCanvas();">Read Less</div>';
 	ext += '<br><br>';
