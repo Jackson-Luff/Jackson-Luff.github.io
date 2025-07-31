@@ -14,10 +14,9 @@
 
 .narrative-button {
   position: absolute;
-  height: 5rem;
-  right: 0rem;
   opacity: 0;
-  align-self: end;
+  top: 0%;
+  left: 0%;
 }
 
 narrative-congrats {
