@@ -1,0 +1,112 @@
+/* ===== Grid Layout (2x2) ===== */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 32px;
+  font-family: 'Exo 2', sans-serif;
+  flex-grow: 1; /* takes up remaining vertical space */
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .resume-grid {
+    width: 75vw;
+  }
+}
+
+/* ===== Clickable Card ===== */
+.resume-card {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 35vh;
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.1);
+  background: var(--fade-color, #333);
+  text-decoration: none; /* no underline */
+  color: inherit;        /* no blue links */
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, filter 0.3s ease-out;
+}
+
+/* ===== Background Image with Gradient Fade ===== */
+.resume-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 30%, var(--fade-color, #333)),
+    var(--bg-img);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transition: transform 0.3s ease;
+}
+
+.resume-card:hover::before {
+  transform: scale(1.1);
+  filter: blur(5px) brightness(0.85);
+}
+
+.resume-card:hover *:not(.resume-view) {
+  filter: blur(5px);
+}
+
+.resume-card:hover .resume-view {
+  filter: none;   /* override blur on text */
+  opacity: 1;
+  z-index: 1;
+}
+
+/* ===== Content Overlay ===== */
+.resume-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  width: 100%;
+  pointer-events: none; /* Prevents nested link behavior bleed */
+}
+
+.resume-content * {
+  pointer-events: auto; /* Allows text interaction again */
+}
+
+/* ===== Typography ===== */
+.resume-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  pointer-events: none;
+  white-space: pre;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.resume-content h3 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+
+}
+
+.resume-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  color: white;
+
+}

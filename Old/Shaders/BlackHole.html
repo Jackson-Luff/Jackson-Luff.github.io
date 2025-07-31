@@ -18,12 +18,12 @@ and open the template in the editor.
         <canvas id = "backgroundCanvas"></canvas>
         
         <div class="Board">
-            <a href="index.html"><h3>JACKSON LUFF</h3></a><br>
+            <a href="../old_index.html"><h3>JACKSON LUFF</h3></a><br>
 
-            <a href="../index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
+            <a href="../old_index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
                 <div>WHAT</div><div>HOME</div>
                 </div></a>
-            <a href="Resources/Jackson Luff - CV.pdf" target="_blank"><div class="button_base b05_3d_roll">
+            <a href="../Resources/CV_Generalist.pdf" target="_blank"><div class="button_base b05_3d_roll">
             <div>IS</div><div>RESUM&Eacute</div>
                 </div></a>
             <a href="../projects.html" id="ProjectButt"><div class="button_base b05_3d_roll">
@@ -36,22 +36,26 @@ and open the template in the editor.
     </head>
     <body>
 	<div class="ShaderBoard" style="p {float:left;}">
-            <h1>Inter-Pixelation</h1>           
-            <img src="../Resources/Images/Shaders/InterPixelation_75.gif" id='Shaders_InterPixelation' alt="InterPixelation"/>
+            <h1>Black Hole</h1>           
+            <img src="../Resources/Images/Shaders/BlackHole_75.gif" id='Shaders_BlackHole' alt="BlackHole"/>
             <div class="ShaderSubBoard">
             <p>
-                Although quality may be lacking in the .gif, this shader is wonderfully interesting.<br>
-                It displays not only a very interesting pixel overlay, but also warping the fragments<br>
-                of those said pixels, as they got closer to my cursor.<br>
+                In this demo, I create a particle behaviour, emulating the visualisation of a black hole.<br>
+                Since these are GPU particles, I had to create an update loop on the GPU, through a vertex shader.<br>
+                What is interesting in this demonstration is how the particles behave. It's a mildly complex<br>
+                mathematical algorithm that evolves over time, unravelling an undetermined spiral. <br>
                 <br>
-                On this piece, I used a variation of trigonometry functions, elapse time and uv coordinates.<br>
-                I've always been fascinated by the thought of creating more with less. Not only is that<br>
-                theory excellently impressive, but efficient too. The less information stored the better.<br>
+                Within this update, there are various factors that alter the birth of this spiral. Lets start with <br>
+                the emitterPosition within itself. In order to have that 3-Dimensional spawn effect, I had to have <br>
+                the emitter alter positions on the parameter of a sphere. Creating a 'wave' effect.
                 <br>
-                This fragment shader was developed in my engine, <b>GenGein</b>.
+                Once spawn is determined, the particle velocity is then ran through a trigonometric algorithm<br>
+                which determines the curvature (nature) of the particles directional vector.<br>
+                <br>
+                This <b>black hole</b> particle demonstration was made in <b>GenGein</b>.<br>
             </p>
             </div><br><br>
-            <iframe src="http://pastebin.com/embed_iframe.php?i=6KcnCs4z"></iframe>
+            <iframe src="http://pastebin.com/embed_iframe.php?i=eLrBQ1wU"></iframe>
 	</div>
 	</body>
 </html>

@@ -18,12 +18,12 @@ and open the template in the editor.
         <canvas id = "backgroundCanvas"></canvas>
         
         <div class="Board">
-            <a href="index.html"><h3>JACKSON LUFF</h3></a><br>
+            <a href="../old_index.html"><h3>JACKSON LUFF</h3></a><br>
 
-            <a href="../index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
+            <a href="../old_index.html" id="IndexButt"> <div class="button_base b05_3d_roll">
                 <div>WHAT</div><div>HOME</div>
                 </div></a>
-            <a href="Resources/Jackson Luff - CV.pdf" target="_blank"><div class="button_base b05_3d_roll">
+            <a href="../Resources/CV_Generalist.pdf" target="_blank"><div class="button_base b05_3d_roll">
             <div>IS</div><div>RESUM&Eacute</div>
                 </div></a>
             <a href="../projects.html" id="ProjectButt"><div class="button_base b05_3d_roll">
@@ -36,26 +36,21 @@ and open the template in the editor.
     </head>
     <body>
 	<div class="ShaderBoard" style="p {float:left;}">
-            <h1>Black Hole</h1>           
-            <img src="../Resources/Images/Shaders/BlackHole_75.gif" id='Shaders_BlackHole' alt="BlackHole"/>
+            <h1>Futuristic Tiles</h1>           
+            <img src="../Resources/Images/Shaders/FutureTiles_75.gif" id='Shaders_FutureTiles' alt="FutureTiles"/>
             <div class="ShaderSubBoard">
             <p>
-                In this demo, I create a particle behaviour, emulating the visualisation of a black hole.<br>
-                Since these are GPU particles, I had to create an update loop on the GPU, through a vertex shader.<br>
-                What is interesting in this demonstration is how the particles behave. It's a mildly complex<br>
-                mathematical algorithm that evolves over time, unravelling an undetermined spiral. <br>
+                <b>Futuristic Tiles </b> was the first of my 'texture without a texture' experiments. At first it was the combination<br>
+                of blending mathematically generated grids with an array of infinite rings dispersing from a 'spawn point'. <br>
                 <br>
-                Within this update, there are various factors that alter the birth of this spiral. Lets start with <br>
-                the emitterPosition within itself. In order to have that 3-Dimensional spawn effect, I had to have <br>
-                the emitter alter positions on the parameter of a sphere. Creating a 'wave' effect.
+                From then onward, I looked into appropriating colour with that logic. As a result, I give you this. <br>
+                I don't exactly know how I came to getting the ring pop effect, but I believe it has something do with <br>
+                the abuse of the positional data within the last alterations of outRGB.<br>
+                The following is the result of fragment shading in my engine, <b>GenGein</b>.
                 <br>
-                Once spawn is determined, the particle velocity is then ran through a trigonometric algorithm<br>
-                which determines the curvature (nature) of the particles directional vector.<br>
-                <br>
-                This <b>black hole</b> particle demonstration was made in <b>GenGein</b>.<br>
             </p>
             </div><br><br>
-            <iframe src="http://pastebin.com/embed_iframe.php?i=eLrBQ1wU"></iframe>
+            <iframe src="http://pastebin.com/embed_iframe.php?i=h1XsSqaQ"></iframe>
 	</div>
 	</body>
 </html>

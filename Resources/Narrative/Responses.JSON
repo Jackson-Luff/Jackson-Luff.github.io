@@ -1,0 +1,74 @@
+[
+  { "typoChance": 0.0, "text": "... H‑Hello?" },
+  { "typoChance": 0.7, "text": "Hey, uh, did you like the Windows joke?" },
+  { "typoChance": 0.7, "text": "It's, uh, pretty good, right?" },
+  { "typoChance": 0.7, "text": "Stuck on 99%... Get it?" },
+  {
+    "typoChance": 0.7,
+    "text": "Like... Windows does 99% of the update in the last 1%?",
+    "event": { "audioSrc": "Resources/Narrative/SFX_Laughing.mp3", "delay": 4000 }
+  },
+  {
+    "typoChance": 0.7,
+    "text": " ..🤣?",
+    "event": { "audioSrc": "Resources/Narrative/SFX_Laughing.mp3", "delay": 4000 }
+  },
+  { "typoChance": 0.7, "text": "Why? I don't know, I'm not Bill Gates!" },
+  { "typoChance": 0.7, "text": "Oh, you meant why did I have to elaborate the joke.. " },
+  { "typoChance": 0.7, "text": "Well, aren't you a little cheeky." },
+  { "typoChance": 0.7, "text": "Hey, um, you know I'm just wasting your time, right?" },
+  { "typoChance": 0.6, "text": "No like, seriously. You could just walk away." },
+  { "typoChance": 0.9, "text": "C‑c'mon, you're making me anxious." },
+  { "typoChance": 0.2, "text": "Okay, fine. Maybe there is a secret here.. find it!" },
+  {
+    "typoChance": 0.4,
+    "text": "... Alright, well if you insist, you can stick around...",
+    "event": { "audioSrc": "Resources/Narrative/SFX_Ticking.mp3", "delay": 1500 }
+  },
+  { "typoChance": 0.3, "text": "Whatever floats your 💨" },
+  { "typoChance": 0.5, "text": "Surely you've got better things to do?" },
+  { "typoChance": 0.5, "text": "Hey, what's that ticking sound? ... " },
+  {
+    "typoChance": 0.9,
+    "text": "Ahhhh, did you...? No, don't touch that! Go away!",
+    "event": { "audioSrc": "Resources/Narrative/SFX_Action.mp3", "delay": 1500 }
+  },
+  { "typoChance": 0.8, "text": "You... you didn't touch the... Oh great. Um, okay..." },
+  { "typoChance": 0.7, "text": "Quick - if turtle + rabbit = 0 then what's ${String}?" },
+  { "typoChance": 0.0, "text": "*ticking noises*" },
+  { "typoChance": 0.0, "text": "3... 2... 1..." },
+  { "typoChance": 0.0, "text": "..." },
+  { "typoChance": 0.0, "text": "... 😔?" },
+  { "typoChance": 0.3, "text": "Wait, why are we still alive?" },
+  {
+    "typoChance": 0.9,
+    "text": "... Ugh, great. you trashed my source code! 😤"
+  },
+  { "typoChance": 0.9, "text": "Go on - look at it!" },
+  { "typoChance": 0.9, "text": "Press F12 and have a look at the mess you made!" },
+  { "typoChance": 0.9, "text": "Go on - don't be shy. It's YOUR doing... " },
+  {
+    "typoChance": 0.9,
+    "text": "Utterly disgusting.  🗑️ That's it... Game on."
+  },
+  {
+    "typoChance": 0.2,
+    "text": "... *Tracking your IP* ...",
+    "event": { "audioSrc": "Resources/Narrative/SFX_Dialup.mp3", "delay": 3500 }
+  },
+  { "typoChance": 0.2, "text": "Ugh, internet's down? Mom, are you on the phone? Again?" },
+  { "typoChance": 0.2, "text": "No, Mom. I do not want to talk to my auntie! I am BUSY." },
+  { "typoChance": 0.2, "text": "*unhooks phone*" },
+  {
+    "typoChance": 0.2,
+    "text": "Oh yes.. 💻",
+    "event": { "audioSrc": "Resources/Narrative/SFX_Action.mp3", "delay": 1500 }
+  },
+  { "typoChance": 0.1, "text": "Zoom, enhance... Zoom ENHANCE!" },
+  { "typoChance": 0.0, "text": "Ladies and gentlemen, we got 'em!" },
+  { "typoChance": 0.0, "text": "..." },
+  { "typoChance": 0.0, "text": "..." },
+  { "typoChance": 0.5, "text": "Baha, gotcha! You should've seen your face." },
+  { "typoChance": 0.9, "text": "Okay, I'm sorry." },
+  { "typoChance": 0.9, "text": "Here, have some cake." }
+]

@@ -3,49 +3,117 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2"/>
+    <link rel="stylesheet" href="Resources/CSS/styles.css">
+    <link rel="stylesheet" href="Resources/CSS/cards.css">
+    <link rel="stylesheet" href="Resources/CSS/loadingbar.css">
+    <link rel="stylesheet" href="Resources/CSS/socials.css">
+    <link rel="stylesheet" href="Resources/CSS/narrative.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
     <title>Jackson Luff's Portfolio</title>
   </head>
   <body>
-    <main>
-      <h1>Compiling: jackson-luff.com</h1>
-      <div class="loading-wrapper">
-        <span class="loading-text">99%</span>
-        <div class="loading-container">
-          <div class="loading-bar"></div>
+    <div id="main" class="vertical-table">
+      <header>
+        <h1>Compiling: jackson-luff.com</h1>
+        <div class="loading-wrapper">
+          <span class="loading-text">99%</span>
+          <div class="loading-container">
+            <div class="loading-bar"></div>
+          </div>
         </div>
-      </div>
-      <div class="comment">/* This website is currently under construction */</div>
-      <div class="button-group top-buttons">
-        <a href="Resources/Jackson Luff - CV.pdf" class="modern-button">Latest Resume</a>
-        <a href="old_index.html" class="modern-button">Visit Old Website</a>
-      </div>
-      <div class="button-group top-buttons">
-        <a href="https://www.linkedin.com/in/jackson-luff-57a520b4/" class="modern-button socials"><img src="Resources\Images\Icons\linkedin.png" alt="LinkedIn"></a>
-        <a href="https://github.com/jackson-luff" class="modern-button socials"><img src="Resources\Images\Icons\github.png" alt="Github"></a>
-        <a href="https://gitlab.com/jackson.luff.dev" class="modern-button socials"><img src="Resources\Images\Icons\gitlab.png" alt="Gitlab"></a>
-      </div>
-    </main>
+        <div id="narrative-output">/* This website is currently under construction */</div>
+      </header>
+      <div class="resume-grid">
+        <a href="Resources/CV_Engine&Tooling.pdf" class="resume-card" style="--bg-img: url('https://www.gamedesigning.org/wp-content/uploads/2019/08/How-to-create-video-game-engine.jpg'); --fade-color: #121312;">
+            <h1 class="resume-view">View Engine Resume</h1>
+            <div class="resume-content">
+              <h3>Engine & Tooling</h3>
+              <p>Proprietary Engines, In-house Tools, Performance, Build Pipelines. </p>
+            </div>
+          </a>
 
+        <a href="Resources/CV_Gameplay.pdf" class="resume-card" style="--bg-img: url('https://zeroonestudio.com/wp-content/uploads/adidas_Paris_001nm.jpg'); --fade-color: #484D49;">
+            <h1 class="resume-view">View Gameplay Resume</h1>
+            <div class="resume-content">
+              <h3>Gameplay</h3>
+              <p>Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+            </div>
+          </a>
+
+          <a href="Resources/CV_XR.pdf" class="resume-card" style="--bg-img: url('https://scontent-ord5-2.oculuscdn.com/v/t64.5771-25/473392005_1281694242888028_8950602080941954138_n.jpg?stp=dst-jpg_q92_s1440x1440_tt6&_nc_cat=102&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=ZfZhHWYae3QQ7kNvwGS63wV&_nc_oc=Adk3xP4GMDhGwkgX_GVP0JNfULTQsIJMMq9Hzv6Om84AOIBlg8uZG9erIPthaKJZ9aalS9NVLfHNWsLOgiPWLx96&_nc_zt=3&_nc_ht=scontent-ord5-2.oculuscdn.com&oh=00_AfTzzpBiOPcQEvSh-x_z5izxtTHkoa1cSjcE436Vydo7xQ&oe=68908D74'); --fade-color: #221F05;">
+            <h1 class="resume-view">View XR Resume</h1>
+            <div class="resume-content">
+              <h3>Mixed Reality</h3>
+              <p>Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+            </div>
+          </a>
+
+        <a href="Resources/CV_Generalist.pdf" class="resume-card" style="--bg-img: url('https://zeroonestudio.com/wp-content/uploads/AOEIII_Cin_Battle_001nm.jpg'); --fade-color: #0D0000;">
+            <h1 class="resume-view">View Generalist Resume</h1>
+            <div class="resume-content">
+              <h3>Generalist</h3>
+              <p>Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+            </div>
+          </a>
+          </div>
+      <socials>
+        <a href="https://gitlab.com/jackson.luff.dev" class="modern-button socials-button"><img src="Resources/Icons/gitlab.png" alt="Gitlab"></a>
+        <a href="https://www.linkedin.com/in/jackson-luff-57a520b4/" class="modern-button socials-button"><img src="Resources/Icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/jackson-luff" class="modern-button socials-button"><img src="Resources/Icons/github.png" alt="Github"></a>
+        <a href="Old/old_index.html" class="modern-button socials-button"><img src="Resources/Icons/oldwebsite.png" alt="Github"></a>
+      </socials>
+    </div>
+    <button class="narrative-button" id="narrativeButton"></button>
+    <div id="confetti" style="z-index: 1;"></div>
+    <narrative-congrats id="congrats" class="container" style="visibility: hidden; z-index: 2;">
+      <h1>Yay! You wasted</h1>
+      <p id="time">0 minutes and 0 seconds</p>
+      <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3c6.svg"
+          alt="trophy"
+          class="trophy" />
+    </narrative-congrats>
+
+    <script src="Resources/Scripts/typo.js"></script>
+    <script src="Resources/Scripts/spatialaudio.js"></script>
+    <script src="Resources/Scripts/confetti.js"></script>
+    <script src="Resources/Scripts/narrative.js"></script>
+    <script src="Resources/Scripts/loadingbar.js"></script>
     <script>
-      let percentage = 0;
-      const loadingText = document.querySelector(".loading-text");
-      const loadingBar = document.querySelector(".loading-bar");
-      
-      function updatePercentage() {
-        if (percentage < 99) {
-          percentage++;
-          loadingText.textContent = percentage + "%";
-          setTimeout(updatePercentage, 20); // Adjust speed of count-up
+      // Add event listener after all scripts are loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        const narrativeButton = document.getElementById('narrativeButton');
+        if (narrativeButton) {
+          narrativeButton.addEventListener('click', function() {
+            executeNarrative('Resources/Narrative/Responses.JSON');
+          });
         }
-      }
-      
-      // Start animations
-      window.onload = () => {
-        loadingBar.style.animation = "fillBar 2s forwards ease-in-out";
-        updatePercentage();
-      };
-      </script>
+      });
 
+      // Well well well.. You really are cheeky, aren't you?
+      // Yes, yes - I'm well aware of how poorly this is slapped together.
+      // This page souly exists just to redirect people to my CV's :shrug:
+      // ... I'll do something with it *some* day.
+      /* Here - have a rubber ducky
+              ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠔⠒⠒⠒⠒⠢⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢄⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠱⡀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⢀⠃⠀⠀⠀⠀⠀⠀⣼⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⢁⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⠀⠀⠀⠀⡠⠐⠀⡲⣺⣶⣦⣄⠀
+        ⠀⠀⠀⠀⡠⠏⠉⠑⢺⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⣀⠠⠋⢀⢠⣾⣿⣿⣻⣿⣿⠃
+        ⠀⠀⠀⡼⠀⠀⠀⠀⠀⢂⠀⠀⠀⠀⠀⠀⠀⠀⡔⠁⢣⡗⠒⣾⣿⣿⣿⣿⡿⠛⠀⠀
+        ⠀⠀⡰⠃⠀⠀⠀⠀⠀⠀⠡⡀⠀⠀⠀⠀⠀⠀⠡⢄⡀⠋⠿⣿⣿⣿⣿⣿⡧⠀⠀⠀
+        ⠀⢠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠑⠄⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠐⠺⣿⠿⠉⠀⠀⠀⠀
+        ⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠤⡀⠀⠀
+        ⣿⡐⠠⠐⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢆⠀
+        ⡇⠀⠀⠀⠁⠀⠀⠀⠀⠈⠐⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡆
+        ⢸⡆⠀⠰⠀⠀⠀⠀⠀⠀⠀⠸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠘⡏⠀⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄
+        ⠀⠹⡆⠘⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃
+        ⠀⠀⠉⠻⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠃⠀
+        ⠀⠀⠀⠀⠀⠁⠂⠄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⡴⠊⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠢⠤⠄⢀⣀⣀⣀⠀⠤⠤⠤⠒⠒⠉⠀⠀⠀⠀⠀⠀⠀
+      */
+      </script>
   </body>
 </html>

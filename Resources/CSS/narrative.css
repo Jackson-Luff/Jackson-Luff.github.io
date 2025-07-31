@@ -1,0 +1,51 @@
+#confetti {
+  filter: blur(5px); /* Added 'px' unit to blur value */
+}
+
+#narrative-output {
+  margin: 1rem 0 0 0;
+  padding: 10px;
+  color: #6A9955;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', 'Courier New', monospace;
+  min-height: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.narrative-button {
+  position: absolute;
+  height: 5rem;
+  right: 0rem;
+  opacity: 0;
+  align-self: end;
+}
+
+narrative-congrats {
+  width: 100vw !important;
+  height: 100vh !important;
+  padding: 1vh;
+  align-self: center;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #fff;
+  position: fixed;
+}
+
+narrative-congrats .trophy {
+  width: 30vw;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  to { transform: translateY(-1.5vh); }
+}
+
+narrative-congrats h1 {
+  font-size: 5vw;
+  margin: 0;
+}
+
+narrative-congrats #time {
+  font-size: 3vw;
+  margin: 10px 0;
+}
