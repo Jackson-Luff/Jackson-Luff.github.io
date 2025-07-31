@@ -8,19 +8,6 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .resume-grid {
-    grid-template-columns: 1fr;
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .resume-grid {
-    width: 75vw;
-  }
-}
-
 /* ===== Clickable Card ===== */
 .resume-card {
   display: flex;
@@ -109,4 +96,23 @@
   opacity: 0.9;
   color: white;
 
+}
+
+/* on Mobile */
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .resume-view  {
+    font-size: 2rem;
+  }
+}
+
+/* on Desktops */
+@media (min-width: 768px) {
+  .resume-grid {
+    width: 75vw;
+  }
 }
