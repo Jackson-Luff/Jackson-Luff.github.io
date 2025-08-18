@@ -26,4 +26,7 @@
 *.exe
 *.out
 *.app
-/Resources/Columns_Game/Content/nbproject/private/
+
+/node_modules/
+
+/Old/Resources/Columns_Game/Content/nbproject/private/

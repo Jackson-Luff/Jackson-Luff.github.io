@@ -1,0 +1,39 @@
+
+
+
+/* ===== Typography ===== */
+.resume-view {
+  font-weight: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 1.5rem;
+  pointer-events: none;
+  white-space: pre;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  padding: 0;
+  margin: 0;
+}
+
+/* on Mobile */
+@media (max-width: 768px) {
+  .resume-view  {
+    font-size: 2rem;
+  }
+}
+
+/* on Desktop */
+@media (min-width: 768px) {
+  .carousel__viewport:hover *a {
+    filter: blur(2px);
+  }
+
+  .carousel__viewport:hover .resume-view {
+    filter: none;   /* override blur on text */
+    opacity: 1;
+  }
+}

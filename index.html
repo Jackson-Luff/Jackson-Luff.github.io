@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2"/>
+    <link rel="stylesheet" href="Resources/CSS/view-focus.css">
+    <link rel="stylesheet" href="Resources/CSS/carousel.css">
     <link rel="stylesheet" href="Resources/CSS/styles.css">
     <link rel="stylesheet" href="Resources/CSS/cards.css">
     <link rel="stylesheet" href="Resources/CSS/loadingbar.css">
@@ -24,39 +26,108 @@
         </div>
         <div id="narrative-output">/* This website is currently under construction */</div>
       </header>
-      <div class="resume-grid">
-        <a href="Resources/CV_Engine&Tooling.pdf" class="resume-card" style="--bg-img: url('https://www.gamedesigning.org/wp-content/uploads/2019/08/How-to-create-video-game-engine.jpg'); --fade-color: #121312;">
-            <h1 class="resume-view">View Engine Resume</h1>
-            <div class="resume-content">
-              <h3>Engine & Tooling</h3>
-              <p>Proprietary Engines, In-house Tools, Performance, Build Pipelines. </p>
-            </div>
-          </a>
+      <!-- Carousel Slideshow -->
+      <section id="carousel" class="carousel" aria-label="Gallery">
+        
+        <button class="carousel_prev">
+          <svg class="arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" />
+          </svg>
+        </button>
+        <button class="carousel_next">
+          <svg class="arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 6 L15 12 L9 18" />
+          </svg>
+        </button>
+        <ol class="carousel__viewport">
 
-        <a href="Resources/CV_Gameplay.pdf" class="resume-card" style="--bg-img: url('https://zeroonestudio.com/wp-content/uploads/adidas_Paris_001nm.jpg'); --fade-color: #484D49;">
-            <h1 class="resume-view">View Gameplay Resume</h1>
-            <div class="resume-content">
-              <h3>Gameplay</h3>
-              <p>Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
-            </div>
-          </a>
+        <!-- Selection intent -->
 
-          <a href="Resources/CV_XR.pdf" class="resume-card" style="--bg-img: url('https://scontent-ord5-2.oculuscdn.com/v/t64.5771-25/473392005_1281694242888028_8950602080941954138_n.jpg?stp=dst-jpg_q92_s1440x1440_tt6&_nc_cat=102&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=ZfZhHWYae3QQ7kNvwGS63wV&_nc_oc=Adk3xP4GMDhGwkgX_GVP0JNfULTQsIJMMq9Hzv6Om84AOIBlg8uZG9erIPthaKJZ9aalS9NVLfHNWsLOgiPWLx96&_nc_zt=3&_nc_ht=scontent-ord5-2.oculuscdn.com&oh=00_AfTzzpBiOPcQEvSh-x_z5izxtTHkoa1cSjcE436Vydo7xQ&oe=68908D74'); --fade-color: #221F05;">
-            <h1 class="resume-view">View XR Resume</h1>
-            <div class="resume-content">
-              <h3>Mixed Reality</h3>
-              <p>Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+          <!-- Slide 1 - Engine & Tooling -->
+          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <h1 class="resume-view">View Engine Resume</h1>
+              <a href="Resources/CV_Engine&Tooling.pdf" class="resume-card" style="--bg-img: url('https://www.gamedesigning.org/wp-content/uploads/2019/08/How-to-create-video-game-engine.jpg'); --fade-color: #121312;">
+                  <div class="resume-content">
+                    <h3>Engine & Tooling</h3>
+                    <p>Proprietary Engines, In-house Tools, Performance Analysis & Build Pipelines. </p>
+                  </div>
+                </a>
             </div>
-          </a>
+          </li>
 
-        <a href="Resources/CV_Generalist.pdf" class="resume-card" style="--bg-img: url('https://zeroonestudio.com/wp-content/uploads/AOEIII_Cin_Battle_001nm.jpg'); --fade-color: #0D0000;">
-            <h1 class="resume-view">View Generalist Resume</h1>
-            <div class="resume-content">
-              <h3>Generalist</h3>
-              <p>Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+          <!-- Slide 2 - UIUX & Gameplay-->
+          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <h1 class="resume-view">View UIUX & Gameplay Resume</h1>
+              <a href="Resources/CV_UIUX&Gameplay.pdf" class="resume-card" style="--bg-img: url('https://zeroonestudio.com/wp-content/uploads/adidas_Paris_001nm.jpg'); --fade-color: #484D49;">
+                <div class="resume-content">
+                  <h3>Gameplay & UIUX</h3>
+                  <p>Feature Development, Bug fixing & collaborative development</p>
+                </div>
+              </a>
             </div>
-          </a>
-          </div>
+          </li>
+
+          <!-- Slide 3 - XR -->
+          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <h1 class="resume-view">View XR Resume</h1>
+              <a href="Resources/CV_XR.pdf" class="resume-card" style="--bg-img: url('https://www.uploadvr.com/content/images/size/w2560/format/webp/2025/04/67d0a37ee76c912f7cef93ec_thumbnail_civ7_v2.jpg'); --fade-color: #221F05;">
+                <div class="resume-content">
+                  <h3>Mixed Reality ( VR & AR )</h3>
+                  <p>8 years of VR/AR dev project highlights</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Slide 4 - Web Dev -->
+          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <h1 class="resume-view">View Web Dev' Resume</h1>
+              <a href="Resources/CV_WebDev.pdf" class="resume-card" style="--bg-img: url('https://zeroonestudio.com/wp-content/uploads/AOEIII_Cin_Battle_001nm.jpg'); --fade-color: #0D0000;">
+                <div class="resume-content">
+                  <h3>Web Development</h3>
+                  <p>Fullstack Game Development</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Slide 4 - Generalist -->
+          <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <h1 class="resume-view">View Generalist Resume</h1>
+              <a href="Resources/CV_Generalist.pdf" class="resume-card" style="--bg-img: url('https://zeroonestudio.com/wp-content/uploads/AOEIII_Cin_Battle_001nm.jpg'); --fade-color: #0D0000;">
+                <div class="resume-content">
+                  <h3>Generalist</h3>
+                  <p>A mix-n-match of my past 10 years as a game dev</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1" class="carousel__navigation-button"></a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3" class="carousel__navigation-button"></a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4" class="carousel__navigation-button"></a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide5" class="carousel__navigation-button"></a>
+            </li>
+          </ol>
+        </aside>
+      </section>
       <socials>
         <a href="https://gitlab.com/jackson.luff.dev" class="modern-button socials-button"><img src="Resources/Icons/gitlab.png" alt="Gitlab"></a>
         <a href="https://www.linkedin.com/in/jackson-luff-57a520b4/" class="modern-button socials-button"><img src="Resources/Icons/linkedin.png" alt="LinkedIn"></a>
@@ -77,18 +148,10 @@
     <script src="Resources/Scripts/typo.js"></script>
     <script src="Resources/Scripts/spatialaudio.js"></script>
     <script src="Resources/Scripts/confetti.js"></script>
-    <script src="Resources/Scripts/narrative.js"></script>
+    <script src="Resources/Scripts/carousel.js"></script>
     <script src="Resources/Scripts/loadingbar.js"></script>
+    <script src="Resources/Scripts/narrative.js"></script>
     <script>
-      // Add event listener after all scripts are loaded
-      document.addEventListener('DOMContentLoaded', function() {
-        const narrativeButton = document.getElementById('narrativeButton');
-        if (narrativeButton) {
-          narrativeButton.addEventListener('click', function() {
-            executeNarrative('Resources/Narrative/Responses.JSON');
-          });
-        }
-      });
 
       // Well well well.. You really are cheeky, aren't you?
       // Yes, yes - I'm well aware of how poorly this is slapped together.

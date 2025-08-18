@@ -6,8 +6,6 @@ socials {
 }
 
 socials .socials-button {
-  width: 120px;
-  height: 120px;
   padding: 0;
   border: none;
   background: none;
@@ -17,7 +15,7 @@ socials .socials-button {
 }
 
 socials .socials-button:hover {
-    filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 1));
+    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 1));
     transform: scale(1.15);
 }
 

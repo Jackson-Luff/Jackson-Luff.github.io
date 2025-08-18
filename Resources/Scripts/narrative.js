@@ -1,3 +1,13 @@
+      // Add event listener after all scripts are loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        const narrativeButton = document.getElementById('narrativeButton');
+        if (narrativeButton) {
+          narrativeButton.addEventListener('click', function() {
+            executeNarrative('Resources/Narrative/Responses.JSON');
+          });
+        }
+      });
+
 var isActive = false;
 
 /**

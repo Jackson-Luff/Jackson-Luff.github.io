@@ -1,27 +1,10 @@
-/* ===== Grid Layout (2x2) ===== */
-.resume-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0px 32px;
-  font-family: 'Exo 2', sans-serif;
-  flex-grow: 1; /* takes up remaining vertical space */
-  align-items: center;
-}
-
 /* ===== Clickable Card ===== */
 .resume-card {
   display: flex;
   align-items: flex-end;
   position: relative;
-  border-radius: 12px;
   overflow: hidden;
-  height: 35vh;
-  box-shadow: 12px 12px 12px rgba(0,0,0,0.1);
-  background: var(--fade-color, #333);
-  text-decoration: none; /* no underline */
-  color: inherit;        /* no blue links */
-  cursor: pointer;
-  transition: box-shadow 0.2s ease, filter 0.3s ease-out;
+  height: 100%;
 }
 
 /* ===== Background Image with Gradient Fade ===== */
@@ -30,7 +13,6 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 30%, var(--fade-color, #333)),
     var(--bg-img);
   background-size: cover;
   background-position: center;
@@ -39,47 +21,33 @@
 }
 
 .resume-card:hover::before {
-  transform: scale(1.1);
+  transform: scale(1.05);
   filter: blur(5px) brightness(0.85);
-}
-
-.resume-card:hover *:not(.resume-view) {
-  filter: blur(5px);
-}
-
-.resume-card:hover .resume-view {
-  filter: none;   /* override blur on text */
-  opacity: 1;
-  z-index: 1;
 }
 
 /* ===== Content Overlay ===== */
 .resume-content {
   position: relative;
   z-index: 1;
-  padding: 20px;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  padding: 50px;
   width: 100%;
   pointer-events: none; /* Prevents nested link behavior bleed */
+  background: linear-gradient(
+      to bottom,
+      rgba(31, 31, 31, 0),  /* transparent */
+      rgba(31, 31, 31, 0.5) 25%,  /* transparent */
+      rgba(31, 31, 31, 1) 50%, /* solid until 85% */
+      rgba(31, 31, 31, 1) /* solid until 85% */
+  );
 }
 
 .resume-content * {
   pointer-events: auto; /* Allows text interaction again */
-}
-
-/* ===== Typography ===== */
-.resume-view {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  color: white;
-  font-size: 3rem;
-  pointer-events: none;
-  white-space: pre;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  text-shadow:
+    -2px -2px 0 black,  /* Top-left */
+    2px -2px 0 black,   /* Top-right */
+    -2px 2px 0 black,   /* Bottom-left */
+    2px 2px 0 black;    /* Bottom-right */
 }
 
 .resume-content h3 {
@@ -87,7 +55,6 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: white;
-
 }
 
 .resume-content p {
@@ -95,24 +62,4 @@
   font-size: 0.95rem;
   opacity: 0.9;
   color: white;
-
-}
-
-/* on Mobile */
-@media (max-width: 768px) {
-  .resume-grid {
-    grid-template-columns: 1fr;
-    display: block;
-  }
-
-  .resume-view  {
-    font-size: 2rem;
-  }
-}
-
-/* on Desktops */
-@media (min-width: 768px) {
-  .resume-grid {
-    width: 75vw;
-  }
 }
