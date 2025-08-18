@@ -43,6 +43,7 @@
 
 .resume-content * {
   pointer-events: auto; /* Allows text interaction again */
+  text-decoration: none;
   text-shadow:
     -2px -2px 0 black,  /* Top-left */
     2px -2px 0 black,   /* Top-right */
